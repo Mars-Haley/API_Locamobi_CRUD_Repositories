@@ -43,5 +43,15 @@ namespace Api1.Services
                 Message = "Usuário inserido com sucesso!"
             };
         }
+
+        public async Task<MessageResponse> Update(UserEntity user)
+        {
+            UserRepository _repository = new UserRepository();
+            await _repository.Update(user);
+            return new MessageResponse
+            {
+                Message = "Usuário alterado com sucesso!"
+            };
+        }
     }
 }

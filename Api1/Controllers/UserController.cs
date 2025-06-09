@@ -5,6 +5,7 @@ using Api1.Services;
 using Api1.Response.User;
 using Api1.DTO;
 using Api1.Response;
+using Api1.Entity;
 
 namespace Api1.Controllers
 {
@@ -41,6 +42,12 @@ namespace Api1.Controllers
         public async Task<ActionResult<MessageResponse>> Delete(int id)
         {
             return Ok(await _service.Delete(id));
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<MessageResponse>> Update(UserEntity user)
+        {
+            return Ok(await _service.Update(user));
         }
 
     }

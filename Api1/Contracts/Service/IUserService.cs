@@ -11,5 +11,6 @@ namespace Api1.Contracts.Service
         Task<UserGetAllResponse> GetAll();
         Task<UserEntity> GetById(int id);
         Task<MessageResponse> Post(UserInsertDTO user);
+        Task<MessageResponse> Update(UserEntity user);
     }
 }
