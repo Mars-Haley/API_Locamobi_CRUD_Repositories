@@ -9,6 +9,16 @@ namespace Api1.Services
 {
     public class UserService : IUserService
     {
+        public async Task<MessageResponse> Delete(int id)
+        {
+            UserRepository _repository = new UserRepository();
+            await _repository.Delete(id);
+            return new MessageResponse
+            {
+                Message = "Usuário excluído com sucesso!"
+            };
+        }
+
         public async Task<UserGetAllResponse> GetAll()
         {
             UserRepository _repository = new UserRepository();

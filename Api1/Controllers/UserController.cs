@@ -4,6 +4,7 @@ using Api1.Contracts.Service;
 using Api1.Services;
 using Api1.Response.User;
 using Api1.DTO;
+using Api1.Response;
 
 namespace Api1.Controllers
 {
@@ -34,6 +35,12 @@ namespace Api1.Controllers
         public async Task<ActionResult> Post(UserInsertDTO user)
         {
             return Ok(await _service.Post(user));
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<MessageResponse>> Delete(int id)
+        {
+            return Ok(await _service.Delete(id));
         }
 
     }

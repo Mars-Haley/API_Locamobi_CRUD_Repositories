@@ -7,6 +7,7 @@ namespace Api1.Contracts.Service
 {
     public interface IUserService
     {
+        Task<MessageResponse> Delete(int id);
         Task<UserGetAllResponse> GetAll();
         Task<UserEntity> GetById(int id);
         Task<MessageResponse> Post(UserInsertDTO user);
