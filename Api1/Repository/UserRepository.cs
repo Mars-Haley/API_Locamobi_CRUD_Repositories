@@ -60,7 +60,7 @@ namespace Api1.Repository
         public async Task Insert(UserInsertDTO user)
         {
             string sql = $@"INSERT INTO usuario (NOME,EMAIL,SENHA,NUMERO,ENDERECO,CIDADE_CODCID)
-                            VALUES(@Name,@Email,@Password,@PhoneNumber,@Adress,@CityId)";
+                            VALUES(@Name,@Email,@Password,@PhoneNumber,@Address,@CityId)";
             await _connection.Execute(sql, user);
         }
 
