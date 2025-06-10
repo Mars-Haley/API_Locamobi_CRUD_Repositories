@@ -1,0 +1,209 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\contracts\\repository\\i_____repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:contracts\\repository\\i_____repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\contracts\\service\\i_____service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:contracts\\service\\i_____service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\services\\_____service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:services\\_____service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\response\\_____\\_____getallresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:response\\_____\\_____getallresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\response\\messageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:response\\messageresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\repository\\_____repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:repository\\_____repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\infrastructure\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:infrastructure\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\entity\\_____entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:entity\\_____entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\dto\\_____insertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:dto\\_____insertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|c:\\users\\lucas\\source\\repos\\api_locamobi_crud_repositories\\controllers\\_____controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D0D25B2-5F4E-4A3B-84F9-99FAE0E59808}|API_Locamobi_CRUD_Repositories.csproj|solutionrelative:controllers\\_____controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "I_____Repository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Contracts\\Repository\\I_____Repository.cs",
+              "RelativeDocumentMoniker": "Contracts\\Repository\\I_____Repository.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Contracts\\Repository\\I_____Repository.cs",
+              "RelativeToolTip": "Contracts\\Repository\\I_____Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:49:07.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "I_____Service.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Contracts\\Service\\I_____Service.cs",
+              "RelativeDocumentMoniker": "Contracts\\Service\\I_____Service.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Contracts\\Service\\I_____Service.cs",
+              "RelativeToolTip": "Contracts\\Service\\I_____Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:48:41.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_____Service.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Services\\_____Service.cs",
+              "RelativeDocumentMoniker": "Services\\_____Service.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Services\\_____Service.cs",
+              "RelativeToolTip": "Services\\_____Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:44:36.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:40:25.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_____GetAllResponse.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Response\\_____\\_____GetAllResponse.cs",
+              "RelativeDocumentMoniker": "Response\\_____\\_____GetAllResponse.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Response\\_____\\_____GetAllResponse.cs",
+              "RelativeToolTip": "Response\\_____\\_____GetAllResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:44:25.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessageResponse.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Response\\MessageResponse.cs",
+              "RelativeDocumentMoniker": "Response\\MessageResponse.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Response\\MessageResponse.cs",
+              "RelativeToolTip": "Response\\MessageResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:43:36.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_____Repository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Repository\\_____Repository.cs",
+              "RelativeDocumentMoniker": "Repository\\_____Repository.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Repository\\_____Repository.cs",
+              "RelativeToolTip": "Repository\\_____Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:42:47.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Connection.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Infrastructure\\Connection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Connection.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Infrastructure\\Connection.cs",
+              "RelativeToolTip": "Infrastructure\\Connection.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:41:10.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_____Entity.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Entity\\_____Entity.cs",
+              "RelativeDocumentMoniker": "Entity\\_____Entity.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Entity\\_____Entity.cs",
+              "RelativeToolTip": "Entity\\_____Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:40:52.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_____InsertDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\DTO\\_____InsertDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\_____InsertDTO.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\DTO\\_____InsertDTO.cs",
+              "RelativeToolTip": "DTO\\_____InsertDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:40:41.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_____Controller.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Controllers\\_____Controller.cs",
+              "RelativeDocumentMoniker": "Controllers\\_____Controller.cs",
+              "ToolTip": "C:\\Users\\lucas\\source\\repos\\API_Locamobi_CRUD_Repositories\\Controllers\\_____Controller.cs",
+              "RelativeToolTip": "Controllers\\_____Controller.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T17:39:58.294Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
