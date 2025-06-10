@@ -1,0 +1,193 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\infraestrutura\\avaliacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\infraestrutura\\avaliacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\controllers\\avaliacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\controllers\\avaliacaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\infraestrutura\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\infraestrutura\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\model\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\model\\avaliacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\primeiraapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\primeiraapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\controllers\\createavaliacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\controllers\\createavaliacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\model\\iavaliacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\model\\iavaliacaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|c:\\users\\sergi\\source\\repos\\primeiraapi\\primeiraapi\\viewmodel\\avaliacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99A0181B-A591-4917-B6C1-137E797B4B5B}|PrimeiraAPI\\PrimeiraAPI.csproj|solutionrelative:primeiraapi\\viewmodel\\avaliacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Program.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T21:11:08.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Avaliacao.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Model\\Avaliacao.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Model\\Avaliacao.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Model\\Avaliacao.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Model\\Avaliacao.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAuwCwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:30:52.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConnectionContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Infraestrutura\\ConnectionContext.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Infraestrutura\\ConnectionContext.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Infraestrutura\\ConnectionContext.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Infraestrutura\\ConnectionContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:59:23.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AvaliacaoController.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Controllers\\AvaliacaoController.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Controllers\\AvaliacaoController.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Controllers\\AvaliacaoController.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Controllers\\AvaliacaoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T21:18:30.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\appsettings.json",
+              "RelativeToolTip": "PrimeiraAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-09T22:14:26.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AvaliacaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Infraestrutura\\AvaliacaoRepository.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Infraestrutura\\AvaliacaoRepository.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Infraestrutura\\AvaliacaoRepository.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Infraestrutura\\AvaliacaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T20:37:45.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateAvaliacaoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Controllers\\CreateAvaliacaoViewModel.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Controllers\\CreateAvaliacaoViewModel.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Controllers\\CreateAvaliacaoViewModel.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Controllers\\CreateAvaliacaoViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T21:57:21.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PrimeiraAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\PrimeiraAPI.csproj",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\PrimeiraAPI.csproj",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\PrimeiraAPI.csproj",
+              "RelativeToolTip": "PrimeiraAPI\\PrimeiraAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-09T19:58:45.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAvaliacaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Model\\IAvaliacaoRepository.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\Model\\IAvaliacaoRepository.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\Model\\IAvaliacaoRepository.cs",
+              "RelativeToolTip": "PrimeiraAPI\\Model\\IAvaliacaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T19:54:25.443Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AvaliacaoViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\ViewModel\\AvaliacaoViewModel.cs",
+              "RelativeDocumentMoniker": "PrimeiraAPI\\ViewModel\\AvaliacaoViewModel.cs",
+              "ToolTip": "C:\\Users\\Sergi\\source\\repos\\PrimeiraAPI\\PrimeiraAPI\\ViewModel\\AvaliacaoViewModel.cs",
+              "RelativeToolTip": "PrimeiraAPI\\ViewModel\\AvaliacaoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-09T21:26:31.296Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
