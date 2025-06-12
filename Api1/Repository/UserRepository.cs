@@ -36,6 +36,7 @@ namespace Api1.Repository
                                 CIDADE_CODCID AS {nameof(UserEntity.CityId)}
                                 FROM usuario";
                 IEnumerable<UserEntity> userList = await con.QueryAsync<UserEntity>(sql);
+
                 return userList;
             }
         }

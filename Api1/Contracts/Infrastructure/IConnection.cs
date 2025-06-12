@@ -6,6 +6,5 @@ namespace Api1.Contracts.Infrastructure
     {
         MySqlConnection GetConnection();
         Task<int> Execute(string sql, object obj);
-
     }
 }

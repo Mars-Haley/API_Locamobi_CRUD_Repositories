@@ -15,7 +15,7 @@ namespace Api1
 
             //dependency
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddSingleton<IConnection, Connection>();
 
             // Add services to the container.
