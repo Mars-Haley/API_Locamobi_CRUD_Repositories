@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Api1.Repository;
 using Api1.Contracts.Service;
-using Api1.Services;
 using Api1.Response.User;
 using Api1.DTO;
 using Api1.Response;
