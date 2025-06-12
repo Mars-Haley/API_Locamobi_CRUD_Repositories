@@ -1,3 +1,9 @@
+using Api1.Contracts.Infrastructure;
+using Api1.Contracts.Repository;
+using Api1.Contracts.Service;
+using Api1.Infrastructure;
+using Api1.Repository;
+using Api1.Services;
 
 namespace Api1
 {
@@ -7,8 +13,13 @@ namespace Api1
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            //dependency
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddSingleton<IConnection, Connection>();
 
+            // Add services to the container.
+            
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

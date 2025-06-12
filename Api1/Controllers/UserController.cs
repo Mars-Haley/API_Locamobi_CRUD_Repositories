@@ -6,6 +6,7 @@ using Api1.Response.User;
 using Api1.DTO;
 using Api1.Response;
 using Api1.Entity;
+using Api1.Contracts.Repository;
 
 namespace Api1.Controllers
 {
@@ -14,15 +15,16 @@ namespace Api1.Controllers
     public class UserController : ControllerBase
     {
         private IUserService _service;
+        private IUserRepository _repository;
 
-        public UserController()
+        public UserController(IUserService userService, IUserRepository userRepository)
         {
-            _service = new UserService();
+            _service = userService;
+            _repository = userRepository;
         }
         [HttpGet]
         public async Task<ActionResult<UserGetAllResponse>> Get()
         {
-            UserRepository _repository = new UserRepository();
             return Ok(await _repository.GetAll());
         }
 

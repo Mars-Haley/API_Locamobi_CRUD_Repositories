@@ -1,4 +1,5 @@
-﻿using Api1.Contracts.Service;
+﻿using Api1.Contracts.Repository;
+using Api1.Contracts.Service;
 using Api1.DTO;
 using Api1.Entity;
 using Api1.Repository;
@@ -9,9 +10,16 @@ namespace Api1.Services
 {
     public class UserService : IUserService
     {
+
+        private IUserRepository _repository;
+
+        public UserService(IUserRepository repository)
+        {
+            _repository = repository;
+        }
+
         public async Task<MessageResponse> Delete(int id)
         {
-            UserRepository _repository = new UserRepository();
             await _repository.Delete(id);
             return new MessageResponse
             {
@@ -21,7 +29,6 @@ namespace Api1.Services
 
         public async Task<UserGetAllResponse> GetAll()
         {
-            UserRepository _repository = new UserRepository();
             return new UserGetAllResponse
             {
                 Data = await _repository.GetAll()
@@ -30,13 +37,11 @@ namespace Api1.Services
 
         public async Task<UserEntity> GetById(int id)
         {
-            UserRepository _repository = new UserRepository();
             return await _repository.GetById(id);
         }
 
         public async Task<MessageResponse> Post(UserInsertDTO user)
         {
-            UserRepository _repository = new UserRepository();
             await _repository.Insert(user);
             return new MessageResponse
             {
@@ -46,7 +51,6 @@ namespace Api1.Services
 
         public async Task<MessageResponse> Update(UserEntity user)
         {
-            UserRepository _repository = new UserRepository();
             await _repository.Update(user);
             return new MessageResponse
             {

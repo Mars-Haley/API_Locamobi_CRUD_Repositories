@@ -1,7 +1,7 @@
-﻿using Api1.Contracts.Repository;
+﻿using Api1.Contracts.Infrastructure;
+using Api1.Contracts.Repository;
 using Api1.DTO;
 using Api1.Entity;
-using Api1.Infrastructure;
 using Dapper;
 using MySql.Data.MySqlClient;
 
@@ -9,11 +9,13 @@ namespace Api1.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private Connection _connection;
-        public UserRepository()
+        private IConnection _connection;
+
+        public UserRepository(IConnection connection)
         {
-            _connection = new Connection();
+            _connection = connection;
         }
+
         public async Task Delete(int id)
         {
             string sql = @$"DELETE FROM usuario 
