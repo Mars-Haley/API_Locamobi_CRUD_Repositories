@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\Api1.csproj": {}
+    "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\User.csproj": {}
   },
   "projects": {
-    "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\Api1.csproj": {
+    "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\User.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\Api1.csproj",
-        "projectName": "Api1",
-        "projectPath": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\Api1.csproj",
+        "projectUniqueName": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\User.csproj",
+        "projectName": "User",
+        "projectPath": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\User.csproj",
         "packagesPath": "C:\\Users\\christopher.oliveir\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\obj\\",
         "projectStyle": "PackageReference",

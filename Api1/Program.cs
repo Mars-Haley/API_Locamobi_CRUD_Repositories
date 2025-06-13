@@ -2,6 +2,7 @@ using Api1.Contracts.Infrastructure;
 using Api1.Contracts.Repository;
 using Api1.Contracts.Service;
 using Api1.Infrastructure;
+using Api1.Models;
 using Api1.Repository;
 using Api1.Services;
 
@@ -16,6 +17,7 @@ namespace Api1
             //dependency
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddTransient<IUserRepository, UserRepository>();
+            builder.Services.AddTransient<TokenService>();
             builder.Services.AddSingleton<IConnection, Connection>();
 
             // Add services to the container.
@@ -33,6 +35,7 @@ namespace Api1
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.MapPost("/Login", (User user, TokenService tokenService) => tokenService.GenerateToken(user));
 
             app.UseHttpsRedirection();
 
