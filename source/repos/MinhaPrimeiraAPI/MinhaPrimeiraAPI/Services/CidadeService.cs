@@ -1,4 +1,5 @@
-﻿using Crudzin.DTO_;
+﻿using Crudzin.Contracts.Repository;
+using Crudzin.DTO_;
 using Crudzin.Entity;
 using Crudzin.Repository;
 using MinhaPrimeiraAPI.Contracts.Service;
@@ -9,9 +10,17 @@ namespace MinhaPrimeiraAPI.Services
 {
     public class CidadeService : ICidadeService
     {
+
+        private ICidadeRepository _repository;
+
+        public CidadeService(ICidadeRepository repository) 
+        { 
+            _repository = repository;
+        }
+
+
         public async Task<MessageResponse> Delete(int id)
         {
-            CidadeRepository _repository = new CidadeRepository();
             await _repository.Delete(id);
             return new MessageResponse
             {
@@ -21,7 +30,6 @@ namespace MinhaPrimeiraAPI.Services
 
         public async Task<CidadeGetAllResponse> GetAll()
         {
-            CidadeRepository _repository = new CidadeRepository();
             return new CidadeGetAllResponse
             {
                 Data = await _repository.GetAll()
@@ -29,13 +37,11 @@ namespace MinhaPrimeiraAPI.Services
         }
         public async Task<CidadeEntity> GetById(int id)
         {
-            CidadeRepository _repository = new CidadeRepository();
             return await _repository.GetById(id);
         }
 
         public async Task<MessageResponse> Post(CidadeInsertDTO cidade)
         {
-            CidadeRepository _repository = new CidadeRepository();
             await _repository.Insert(cidade);
             return new MessageResponse
             {
@@ -45,7 +51,6 @@ namespace MinhaPrimeiraAPI.Services
 
         public async Task<MessageResponse> Update(CidadeEntity cidade)
         {
-            CidadeRepository _repository = new CidadeRepository();
             await _repository.Update(cidade);
             return new MessageResponse
             {

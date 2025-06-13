@@ -1,10 +1,11 @@
 ﻿
 using MySql.Data.MySqlClient;
 using Dapper;
+using MinhaPrimeiraAPI.Contracts.Infrastructure;
 
 namespace Crudzin.Infrastructure
 {
-    public class Connection
+    public class Connection : IConnection
     {
         protected string connectionString = "Server=localhost;Database=mydb;User=root;Password=root;";
 

@@ -3,6 +3,7 @@ using Crudzin.DTO_;
 using Crudzin.Entity;
 using Crudzin.Infrastructure;
 using Dapper;
+using MinhaPrimeiraAPI.Contracts.Infrastructure;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Crypto.Digests;
 using System;
@@ -16,11 +17,17 @@ namespace Crudzin.Repository
 {
     public class CidadeRepository : ICidadeRepository
     {
+
+        private IConnection _connection;
+
+        public CidadeRepository(IConnection connection)
+        {
+            _connection = connection;
+        }
+
         public async Task<IEnumerable<CidadeEntity>> GetAll()
         {
-            Connection connection = new Connection();
-
-            using (MySqlConnection con = connection.GetConnection())
+            using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql = @$"
                         SELECT CODCID AS {nameof(CidadeEntity.CODCID)},
@@ -41,9 +48,7 @@ namespace Crudzin.Repository
                        INSERT INTO CIDADE(NOMECID, UF)
                        VALUE(@NOMECID, @UF)";
 
-            Connection connection = new Connection();
-
-            using (MySqlConnection con = connection.GetConnection())
+            using (MySqlConnection con = _connection.GetConnection())
             {
                 await con.ExecuteAsync(sql, cidade);
 
@@ -57,9 +62,7 @@ namespace Crudzin.Repository
                             WHERE CODCID = @codigo
                             ";
 
-            Connection connection = new Connection();
-
-            using (MySqlConnection con = connection.GetConnection())
+            using (MySqlConnection con = _connection.GetConnection())
             {
                 await con.ExecuteAsync(sql, new {codigo });
             }
@@ -68,9 +71,7 @@ namespace Crudzin.Repository
 
         public async Task<CidadeEntity> GetById(int codigo)
         {
-            Connection connection = new Connection();
-
-            using (MySqlConnection con = connection.GetConnection())
+            using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql = @$"
                              SELECT CODCID AS {nameof(CidadeEntity.CODCID)},
@@ -87,8 +88,6 @@ namespace Crudzin.Repository
 
         public async Task Update(CidadeEntity cidade)
         {
-            Connection connection = new Connection();
-
             string sql = @$"
                          UPDATE CIDADE 
                          SET NOMECID = @NOMECID,
@@ -97,7 +96,7 @@ namespace Crudzin.Repository
                          ";
 
 
-            using (MySqlConnection con = connection.GetConnection())
+            using (MySqlConnection con = _connection.GetConnection())
             {
                 await con.ExecuteAsync(sql, cidade);
             }

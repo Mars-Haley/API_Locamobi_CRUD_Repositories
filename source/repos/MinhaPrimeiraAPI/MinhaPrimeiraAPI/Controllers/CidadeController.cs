@@ -17,9 +17,9 @@ namespace MinhaPrimeiraAPI.Controllers
     {
         private ICidadeService _service;
 
-        public CidadeController()
+        public CidadeController(ICidadeService cidadeService)
         {
-            _service = new CidadeService();
+            _service = cidadeService;
         }
 
         [HttpGet]
