@@ -1,9 +1,10 @@
 ﻿using Dapper;
+using MinhaPrimeiraAPI.Contracts.Infrastructure;
 using MySql.Data.MySqlClient;
 
 namespace MeuPrimeiroCrud.Infrastructure
 {
-    public class Connection
+    public class Connection: IConnection
     {
         
         protected string connectionString = "Server=localhost;Database=locamobi;User=root;Password=root;";

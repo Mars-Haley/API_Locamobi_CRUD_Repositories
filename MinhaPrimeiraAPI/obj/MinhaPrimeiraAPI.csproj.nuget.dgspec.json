@@ -11,7 +11,7 @@
         "projectName": "MinhaPrimeiraAPI",
         "projectPath": "C:\\Users\\joao.eskelsen\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
         "packagesPath": "C:\\Users\\joao.eskelsen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joao.eskelsen\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\obj\\",
+        "outputPath": "C:\\Users\\joao.eskelsen\\Source\\Repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

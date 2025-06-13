@@ -3,15 +3,23 @@ using Locamobi_CRUD_Repositories.Contracts.Repository;
 using Locamobi_CRUD_Repositories.DTO;
 using Locamobi_CRUD_Repositories.Entity;
 using MeuPrimeiroCrud.Infrastructure;
+using MinhaPrimeiraAPI.Contracts.Infrastructure;
 using MySql.Data.MySqlClient;
 
 namespace Locamobi_CRUD_Repositories.Repository
 {
     public class VeiculoRepository : IVeiculoRepository
     {
+
+        private IConnection _connection;
+
+        public VeiculoRepository(IConnection connection)
+        {
+            _connection = connection;
+        }
+
         public async Task <IEnumerable<VeiculoEntity>> GetAll() 
         {
-            Connection _connection = new Connection();
             using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql = $@"
@@ -38,7 +46,6 @@ namespace Locamobi_CRUD_Repositories.Repository
 
         public async Task Delete(int codVeiculo)
         {
-            Connection _connection = new Connection();
             string sql = "DELETE FROM veiculo WHERE CODVEICULO = @codVeiculo";
             await _connection.Execute(sql, new {codVeiculo});
 
@@ -46,7 +53,6 @@ namespace Locamobi_CRUD_Repositories.Repository
 
         public async Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo) 
         {
-            Connection _connection = new Connection();
             using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql =$@"
@@ -66,12 +72,10 @@ namespace Locamobi_CRUD_Repositories.Repository
         
             }
 
-
         }
 
         public async Task Insert(VeiculoInsertDTO veiculoInsert)
         {
-            Connection _connection = new Connection();
             string sql = $@"
                             INSERT INTO veiculo (MODELO, MARCA, ANO, PLACA,
                                 COR, CIDADE_CODCID, CLASSIFIC, TIPO, USUARIO_CODUSER) 
@@ -83,8 +87,6 @@ namespace Locamobi_CRUD_Repositories.Repository
 
         public async Task Update(VeiculoEntity veiculoUpdate)
         {
-            Connection _connection = new Connection();
-
             string sql = $@"
                 UPDATE veiculo 
                 SET MODELO = @Modelo, 
