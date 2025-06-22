@@ -8,6 +8,8 @@ using Api1.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
+using User.Infrastructure;
 
 namespace Api1
 {
@@ -22,7 +24,10 @@ namespace Api1
             builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddTransient<TokenService>();
             builder.Services.AddSingleton<IConnection, Connection>();
-            builder.Services.AddScoped<ITokenService, TokenService>(); 
+            builder.Services.AddScoped<ITokenService, TokenService>();
+            builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(
+                "Server=localhost;Database=locamobi;User=root;Password=root;" ,
+                ServerVersion.AutoDetect("Server=localhost;Database=locamobi;User=root;Password=root;")));
 
             // JWT Config
             var key = Encoding.ASCII.GetBytes(Configuration.PrivateKey);

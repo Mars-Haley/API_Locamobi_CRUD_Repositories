@@ -38,6 +38,12 @@ namespace Api1.Controllers
             return Ok(await _service.Post(user));
         }
 
+        [HttpGet("name/A")]
+        public async Task<ActionResult<UserGetAllResponse>> GetUsersStartWithA()
+        {
+            return Ok(await _service.GetUsersStartWithA());
+        }
+
         [HttpGet("city/3")]
         public async Task<ActionResult<UserGetAllResponse>> GetUsersInCity3()
         {

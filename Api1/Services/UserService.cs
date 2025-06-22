@@ -29,7 +29,14 @@ namespace Api1.Services
         {
             return new UserGetAllResponse
             {
-                Data = await _repository.GetUsersInCity3()
+                Names = await _repository.GetUserNameInCity3()
+            };
+        }
+        public async Task<UserGetAllResponse> GetUsersStartWithA()
+        {
+            return new UserGetAllResponse
+            {
+                Data = await _repository.GetUsersStartWithA()
             };
         }
 

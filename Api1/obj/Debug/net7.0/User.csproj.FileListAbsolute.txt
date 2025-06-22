@@ -140,3 +140,8 @@ C:/Users/christopher.oliveir/source/repos/ApiUsuario/Api1/obj/Debug/net7.0/ref/U
 /home/mars/API_Locamobi_CRUD_Repositories/Api1/obj/Debug/net7.0/User.csproj.Up2Date
 /home/mars/API_Locamobi_CRUD_Repositories/Api1/obj/Debug/net7.0/User.genruntimeconfig.cache
 /home/mars/API_Locamobi_CRUD_Repositories/Api1/obj/Debug/net7.0/ref/User.dll
+/home/mars/API_Locamobi_CRUD_Repositories/Api1/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/home/mars/API_Locamobi_CRUD_Repositories/Api1/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/mars/API_Locamobi_CRUD_Repositories/Api1/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/mars/API_Locamobi_CRUD_Repositories/Api1/bin/Debug/net7.0/MySqlConnector.dll
+/home/mars/API_Locamobi_CRUD_Repositories/Api1/bin/Debug/net7.0/Pomelo.EntityFrameworkCore.MySql.dll

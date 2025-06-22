@@ -6,7 +6,8 @@ namespace Api1.Contracts.Repository
     public interface IUserRepository
     {
         Task<IEnumerable<UserEntity>> GetAll();
-        Task<IEnumerable<UserEntity>> GetUsersInCity3();
+        Task<IEnumerable<string>> GetUserNameInCity3();
+        Task<IEnumerable<UserEntity>> GetUsersStartWithA(); 
         Task<UserEntity> GetById(int id);
         Task<UserEntity> GetByEmail(string email);
         Task Insert(UserInsertDTO user);

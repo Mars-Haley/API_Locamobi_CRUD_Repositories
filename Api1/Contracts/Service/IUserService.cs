@@ -9,6 +9,7 @@ namespace Api1.Contracts.Service
     {
         Task<MessageResponse> Delete(int id);
         Task<UserGetAllResponse> GetAll();
+        Task<UserGetAllResponse> GetUsersStartWithA();
         Task<UserGetAllResponse> GetUsersInCity3();
         Task<UserEntity> GetById(int id);
         Task<UserEntity> ValidateUser(string email, string password);

@@ -3,23 +3,35 @@ using Api1.Contracts.Repository;
 using Api1.DTO;
 using Api1.Entity;
 using Dapper;
+using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
+using User.Infrastructure;
 
 namespace Api1.Repository
 {
     public class UserRepository : IUserRepository
     {
         private IConnection _connection;
+        private AppDbContext _dbContext;
 
-        public UserRepository(IConnection connection)
+        public UserRepository(IConnection connection, AppDbContext dbContext)
         {
             _connection = connection;
+            _dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<UserEntity>> GetUsersInCity3()
+        public async Task<IEnumerable<string>> GetUserNameInCity3()
+        {
+            var names = await (from u in _dbContext.Users
+                    where u.CityId == 3
+                        select u.Name).ToListAsync();
+            return names;
+        }
+
+        public async Task<IEnumerable<UserEntity>> GetUsersStartWithA()
         {
             var allUsers = await GetAll();
-            var filtered = allUsers.Where(u => u.CityId == 3);
+            var filtered = allUsers.Where(u => u.Name.StartsWith("A"));
             return filtered;
         }
         public async Task Delete(int id)
