@@ -16,9 +16,9 @@ namespace Api1.Controllers
         }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequest request)
+        public async Task<IActionResult> Login([FromBody] LoginRequestDTO requestDto)
         {
-            var user = await _userService.ValidateUser(request.Email, request.Password);
+            var user = await _userService.ValidateUser(requestDto.Email, requestDto.Password);
             if (user == null)
                 return BadRequest("Invalid credentials");
             var token = _tokenService.GenerateToken(user);

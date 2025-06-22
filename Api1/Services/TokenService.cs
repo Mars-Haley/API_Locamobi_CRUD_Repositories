@@ -12,7 +12,7 @@ namespace Api1
 {
     public class TokenService : ITokenService
     {
-        public TokenResponse GenerateToken(UserEntity user)
+        public TokenResponseDTO GenerateToken(UserEntity user)
         {
             var handler = new JwtSecurityTokenHandler();
 
@@ -45,7 +45,7 @@ namespace Api1
             var accessToken = handler.WriteToken(token);
             var refreshToken = GenerateRefreshToken();
 
-            return new TokenResponse
+            return new TokenResponseDTO
             {
                 AccessToken = accessToken,
                 RefreshToken = refreshToken,

@@ -6,7 +6,7 @@ namespace Api1.Contracts.Service;
 
 public interface ITokenService
 {
-    TokenResponse GenerateToken(UserEntity user);
+    TokenResponseDTO GenerateToken(UserEntity user);
     string GenerateRefreshToken();
     ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
     ClaimsIdentity GenerateClaims (UserEntity user);
