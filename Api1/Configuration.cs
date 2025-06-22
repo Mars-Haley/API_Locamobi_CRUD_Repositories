@@ -2,6 +2,8 @@
 {
     public class Configuration
     {
-        public static string PrivateKey { get; set; } = "5+IV)E2glD3xCH2rNTElZ_at9(TbG1N(E=pH)29*";
+        public static string PrivateKey => Environment.GetEnvironmentVariable("JWT_PRIVATE_KEY")
+        ?? throw new InvalidOperationException("JWT_PRIVATE_KEY is not set.");
+
     }
 }

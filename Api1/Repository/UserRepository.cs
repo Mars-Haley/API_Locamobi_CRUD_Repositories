@@ -16,9 +16,15 @@ namespace Api1.Repository
             _connection = connection;
         }
 
+        public async Task<IEnumerable<UserEntity>> GetUsersInCity3()
+        {
+            var allUsers = await GetAll();
+            var filtered = allUsers.Where(u => u.CityId == 3);
+            return filtered;
+        }
         public async Task Delete(int id)
         {
-            string sql = @$"DELETE FROM usuario 
+            string sql = @$"DELETE FROM USUARIO 
                             WHERE CODUSER = @Id";
             await _connection.Execute(sql, new { id });
         }
@@ -34,7 +40,7 @@ namespace Api1.Repository
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
                                 CIDADE_CODCID AS {nameof(UserEntity.CityId)}
-                                FROM usuario";
+                                FROM USUARIO";
                 IEnumerable<UserEntity> userList = await con.QueryAsync<UserEntity>(sql);
 
                 return userList;
@@ -52,17 +58,36 @@ namespace Api1.Repository
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
                                 CIDADE_CODCID AS {nameof(UserEntity.CityId)}
-                                FROM usuario
+                                FROM USUARIO 
                                 WHERE CODUSER = @Id";
                 UserEntity user = await con.QueryFirstAsync<UserEntity>(sql, new { id });
                 return user;
             }
 
         }
+        public async Task<UserEntity> GetByEmail(string email)
+        {
+            using (MySqlConnection con = _connection.GetConnection())
+            {
+                string sql = $@"SELECT CODUSER AS {nameof(UserEntity.Id)},
+                                NOME AS {nameof(UserEntity.Name)},
+                                EMAIL AS {nameof(UserEntity.Email)},
+                                SENHA AS {nameof(UserEntity.Password)},
+                                NUMERO AS {nameof(UserEntity.PhoneNumber)},
+                                ENDERECO AS {nameof(UserEntity.Address)},
+                                CIDADE_CODCID AS {nameof(UserEntity.CityId)}
+                                FROM USUARIO
+                                WHERE EMAIL = @Email";
+                UserEntity? user = await con.QueryFirstOrDefaultAsync<UserEntity>(sql, new { email });
+                if (user == null)
+                    throw new Exception("User not found");
+                return user;
+            }
+        }
 
         public async Task Insert(UserInsertDTO user)
         {
-            string sql = $@"INSERT INTO usuario (NOME,EMAIL,SENHA,NUMERO,ENDERECO,CIDADE_CODCID)
+            string sql = $@"INSERT INTO USUARIO (NOME,EMAIL,SENHA,NUMERO,ENDERECO,CIDADE_CODCID)
                             VALUES(@Name,@Email,@Password,@PhoneNumber,@Address,@CityId)";
             await _connection.Execute(sql, user);
         }
@@ -70,7 +95,7 @@ namespace Api1.Repository
 
         public async Task Update(UserEntity user)
         {
-            string sql = $@"UPDATE usuario 
+            string sql = $@"UPDATE USUARIO 
                             SET NOME = @Name,
                             EMAIL = @Email,
                             ENDERECO = @Address,

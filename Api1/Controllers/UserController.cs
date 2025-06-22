@@ -38,6 +38,12 @@ namespace Api1.Controllers
             return Ok(await _service.Post(user));
         }
 
+        [HttpGet("city/3")]
+        public async Task<ActionResult<UserGetAllResponse>> GetUsersInCity3()
+        {
+            return Ok(await _service.GetUsersInCity3());
+        }
+
         [HttpDelete("{id}")]
         public async Task<ActionResult<MessageResponse>> Delete(int id)
         {

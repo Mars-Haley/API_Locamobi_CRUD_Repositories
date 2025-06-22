@@ -1,10 +1,13 @@
 using Api1.Contracts.Infrastructure;
 using Api1.Contracts.Repository;
 using Api1.Contracts.Service;
+using Api1.Entity;
 using Api1.Infrastructure;
-using Api1.Models;
 using Api1.Repository;
 using Api1.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Api1
 {
@@ -20,8 +23,32 @@ namespace Api1
             builder.Services.AddTransient<TokenService>();
             builder.Services.AddSingleton<IConnection, Connection>();
 
+            // JWT Config
+            var key = Encoding.ASCII.GetBytes(Configuration.PrivateKey);
+            builder.Services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = true;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidIssuer = "http://localhost:5150",
+                    ValidateAudience = false,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+                };
+            });
+
+
             // Add services to the container.
-            
+
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
@@ -35,12 +62,23 @@ namespace Api1
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            app.MapPost("/Login", (User user, TokenService tokenService) => tokenService.GenerateToken(user));
 
             app.UseHttpsRedirection();
+            app.UseAuthentication();
 
             app.UseAuthorization();
+            app.MapPost("/Login", async (UserEntity request, TokenService tokenService, IUserService userService) =>
+            {
+                UserEntity user = await userService.ValidateUser(request.Email, request.Password);
 
+                if (user == null)
+                {
+                    return Results.Unauthorized();
+                }
+
+                var token = tokenService.GenerateToken(user);
+                return Results.Ok(new { Token = token });
+            });
 
             app.MapControllers();
 

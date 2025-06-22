@@ -25,6 +25,13 @@ namespace Api1.Services
                 Message = "Usuário excluído com sucesso!"
             };
         }
+        public async Task<UserGetAllResponse> GetUsersInCity3()
+        {
+            return new UserGetAllResponse
+            {
+                Data = await _repository.GetUsersInCity3()
+            };
+        }
 
         public async Task<UserGetAllResponse> GetAll()
         {
@@ -56,5 +63,11 @@ namespace Api1.Services
                 Message = "Usuário alterado com sucesso!"
             };
         }
+        public async Task<UserEntity> ValidateUser(string email, string password)
+        {
+            var user = await _repository.GetByEmail(email);
+            return user;
+        }
+
     }
 }
