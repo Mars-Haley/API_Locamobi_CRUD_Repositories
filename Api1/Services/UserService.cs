@@ -25,9 +25,9 @@ namespace Api1.Services
                 Message = "Usuário excluído com sucesso!"
             };
         }
-        public async Task<UserGetAllResponse> GetUsersInCity3()
+        public async Task<UserNameResponse> GetUsersInCity3()
         {
-            return new UserGetAllResponse
+            return new UserNameResponse()
             {
                 Names = await _repository.GetUserNameInCity3()
             };

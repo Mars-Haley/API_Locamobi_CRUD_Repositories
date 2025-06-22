@@ -5,6 +5,5 @@ namespace Api1.Response.User
     public class UserGetAllResponse
     {
         public IEnumerable<UserEntity> Data { get; set; }
-        public IEnumerable<string> Names { get; set; }
     }
 }
