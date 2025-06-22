@@ -6,10 +6,11 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using Api1.Contracts.Service;
 
 namespace Api1
 {
-    public class TokenService
+    public class TokenService : ITokenService
     {
         public TokenResponse GenerateToken(UserEntity user)
         {
@@ -52,7 +53,7 @@ namespace Api1
             };
         }
 
-        private string GenerateRefreshToken()
+        public string GenerateRefreshToken()
         {
             var randomNumber = new byte[64];
             using var rng = RandomNumberGenerator.Create();
@@ -76,7 +77,7 @@ namespace Api1
                 throw new SecurityTokenException("Invalid token");
             return principal;
         }
-        private static ClaimsIdentity GenerateClaims(UserEntity user)
+        public ClaimsIdentity GenerateClaims(UserEntity user)
         {
             var ci = new ClaimsIdentity();
             var addressJson = JsonSerializer.Serialize(new

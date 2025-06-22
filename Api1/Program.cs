@@ -22,6 +22,7 @@ namespace Api1
             builder.Services.AddTransient<IUserRepository, UserRepository>();
             builder.Services.AddTransient<TokenService>();
             builder.Services.AddSingleton<IConnection, Connection>();
+            builder.Services.AddScoped<ITokenService, TokenService>(); 
 
             // JWT Config
             var key = Encoding.ASCII.GetBytes(Configuration.PrivateKey);
@@ -67,18 +68,6 @@ namespace Api1
             app.UseAuthentication();
 
             app.UseAuthorization();
-            app.MapPost("/Login", async (UserEntity request, TokenService tokenService, IUserService userService) =>
-            {
-                UserEntity user = await userService.ValidateUser(request.Email, request.Password);
-
-                if (user == null)
-                {
-                    return Results.Unauthorized();
-                }
-
-                var token = tokenService.GenerateToken(user);
-                return Results.Ok(new { Token = token });
-            });
 
             app.MapControllers();
 
