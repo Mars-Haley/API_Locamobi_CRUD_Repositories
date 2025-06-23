@@ -8,6 +8,7 @@ using MySql.Data.MySqlClient;
 
 namespace Locamobi_CRUD_Repositories.Repository
 {
+
     public class VeiculoRepository : IVeiculoRepository
     {
 
@@ -38,11 +39,7 @@ namespace Locamobi_CRUD_Repositories.Repository
                 IEnumerable<VeiculoEntity> veiculoList = await con.QueryAsync<VeiculoEntity>(sql);
                 return veiculoList;
             }
-
-
         }
-
-
 
         public async Task Delete(int codVeiculo)
         {
@@ -101,5 +98,6 @@ namespace Locamobi_CRUD_Repositories.Repository
 
             await _connection.Execute(sql, veiculoUpdate);
         }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using Locamobi_CRUD_Repositories.Contracts.Repository;
+﻿using System.Text.RegularExpressions;
+using Locamobi_CRUD_Repositories.Contracts.Repository;
 using Locamobi_CRUD_Repositories.DTO;
 using Locamobi_CRUD_Repositories.Entity;
 using Locamobi_CRUD_Repositories.Repository;
@@ -8,6 +9,7 @@ using MinhaPrimeiraAPI.Response.Veiculo;
 
 namespace MinhaPrimeiraAPI.Services
 {
+
     public class VeiculoService : IVeiculoService
     {
 
@@ -36,6 +38,14 @@ namespace MinhaPrimeiraAPI.Services
             };
 
         }
+
+        public async Task <List<VeiculoEntity>> GetByBrand(string marcaVeiculo)
+        {
+            return await _veiculoRepository.Veiculos
+                         .Where(v => v.Marca == marcaVeiculo)
+                         .ToListAsync();
+        }
+
 
         public async Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo)
         {

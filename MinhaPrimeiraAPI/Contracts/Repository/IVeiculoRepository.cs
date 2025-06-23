@@ -1,5 +1,6 @@
 ﻿using Locamobi_CRUD_Repositories.DTO;
 using Locamobi_CRUD_Repositories.Entity;
+using MinhaPrimeiraAPI.Response;
 
 namespace Locamobi_CRUD_Repositories.Contracts.Repository
 {
@@ -14,7 +15,5 @@ namespace Locamobi_CRUD_Repositories.Contracts.Repository
         Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo);
 
         Task Delete(int codVeiculo);
-
-
     }
 }

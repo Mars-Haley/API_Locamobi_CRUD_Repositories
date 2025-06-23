@@ -1,0 +1,231 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\contracts\\service\\iveiculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\contracts\\service\\iveiculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\services\\veiculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\services\\veiculoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\contracts\\repository\\iveiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\contracts\\repository\\iveiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\repository\\veiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\repository\\veiculorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\contracts\\infrastructure\\iconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\contracts\\infrastructure\\iconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\controllers\\veiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\controllers\\veiculocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\models\\veiculosinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\models\\veiculosinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\configurationprivatekey\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\configurationprivatekey\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\minhaprimeiraapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\minhaprimeiraapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|c:\\users\\usu\u00E1rio\\source\\repos\\api_locamobi_crud_repositories\\minhaprimeiraapi\\contracts\\token\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2AF7EBD-E7BA-4D0B-9974-69393EC6607F}|MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj|solutionrelative:minhaprimeiraapi\\contracts\\token\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IVeiculoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Repository\\IVeiculoRepository.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Contracts\\Repository\\IVeiculoRepository.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Repository\\IVeiculoRepository.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Contracts\\Repository\\IVeiculoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T02:05:27.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IVeiculoService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Service\\IVeiculoService.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Contracts\\Service\\IVeiculoService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Service\\IVeiculoService.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Contracts\\Service\\IVeiculoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:04:52.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VeiculoService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Services\\VeiculoService.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Services\\VeiculoService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Services\\VeiculoService.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Services\\VeiculoService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T21:06:49.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VeiculoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Repository\\VeiculoRepository.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Repository\\VeiculoRepository.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Repository\\VeiculoRepository.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Repository\\VeiculoRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T04:55:50.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VeiculoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Controllers\\VeiculoController.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Controllers\\VeiculoController.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Controllers\\VeiculoController.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Controllers\\VeiculoController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAASwB0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T20:53:17.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Token\\ITokenService.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Contracts\\Token\\ITokenService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Token\\ITokenService.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Contracts\\Token\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T16:17:25.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Program.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T15:54:35.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Services\\TokenService.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Services\\TokenService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:28:00.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VeiculosInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Models\\VeiculosInfo.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Models\\VeiculosInfo.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Models\\VeiculosInfo.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Models\\VeiculosInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:18:37.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\ConfigurationPrivateKey\\Configuration.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\ConfigurationPrivateKey\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\ConfigurationPrivateKey\\Configuration.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\ConfigurationPrivateKey\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:09:12.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MinhaPrimeiraAPI.csproj",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\Source\\Repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\Source\\Repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-19T18:08:14.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IConnection.cs",
+              "DocumentMoniker": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Infrastructure\\IConnection.cs",
+              "RelativeDocumentMoniker": "MinhaPrimeiraAPI\\Contracts\\Infrastructure\\IConnection.cs",
+              "ToolTip": "C:\\Users\\Usu\u00E1rio\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\Contracts\\Infrastructure\\IConnection.cs",
+              "RelativeToolTip": "MinhaPrimeiraAPI\\Contracts\\Infrastructure\\IConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T18:04:05.352Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

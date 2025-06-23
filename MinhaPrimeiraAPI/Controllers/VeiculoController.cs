@@ -1,4 +1,5 @@
-﻿using Locamobi_CRUD_Repositories.DTO;
+﻿using System.Linq;
+using Locamobi_CRUD_Repositories.DTO;
 using Locamobi_CRUD_Repositories.Entity;
 using Microsoft.AspNetCore.Mvc;
 using MinhaPrimeiraAPI.Contracts.Service;
@@ -49,6 +50,17 @@ namespace MinhaPrimeiraAPI.Controllers
             return Ok(await _veiculoService.Update(updateVeiculo));
         }
 
+        [HttpGet("{Marca}")]
+        public async Task<ActionResult<VeiculoEntity>> GetByBrand()
+        {
+            
+             var list = await VeiculoEntity.erro aqui
+                .Where(v => v.Marca == marca)
+                .ToListAsync();
+
+            return Ok(list);
+
+        }
 
 
     }
