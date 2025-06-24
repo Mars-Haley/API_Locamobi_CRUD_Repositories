@@ -219,3 +219,4 @@ C:\Users\christopher.oliveir\source\repos\ApiUsuario\Api1\obj\Debug\net7.0\refin
 C:\Users\christopher.oliveir\source\repos\ApiUsuario\Api1\obj\Debug\net7.0\User.pdb
 C:\Users\christopher.oliveir\source\repos\ApiUsuario\Api1\obj\Debug\net7.0\User.genruntimeconfig.cache
 C:\Users\christopher.oliveir\source\repos\ApiUsuario\Api1\obj\Debug\net7.0\ref\User.dll
+C:\Users\christopher.oliveir\source\repos\ApiUsuario\Api1\bin\Debug\net7.0\BCrypt.Net-Next.dll

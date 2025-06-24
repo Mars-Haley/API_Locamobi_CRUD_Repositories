@@ -40,7 +40,7 @@ namespace User.Services
 
         public async Task<UserLoginResponse> Login(UserLoginDTO user)
         {
-           user.Password = Criptografia.Criptografar(user.Password);
+           user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
            UserEntity newUser = await _repository.Login(user);
            string token = _authentication.GenerateToken(newUser);
            return new UserLoginResponse
@@ -58,7 +58,7 @@ namespace User.Services
 
         public async Task<MessageResponse> Post(UserInsertDTO user)
         {
-            user.Password = Criptografia.Criptografar(user.Password);
+            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             await _repository.Insert(user);
             return new MessageResponse
             {
