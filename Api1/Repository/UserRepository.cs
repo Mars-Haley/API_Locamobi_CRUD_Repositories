@@ -58,18 +58,20 @@ namespace User.Repository
 
         }
 
+        /*
         public async Task<UserEntity> Login(UserLoginDTO user)
         {
             using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql = $@"SELECT CODUSER AS {nameof(UserEntity.Id)},
                                 NOME AS  {nameof(UserEntity.Name)},
-                                EMAIL AS {nameof(UserEntity.Email)},
+                                EMAIL AS {nameof(UserEntity.Email)}
                                 FROM USUARIO)
                                 WHERE EMAIL = @Email AND SENHA = @Password";
                 return await con.QueryFirstAsync<UserEntity>(sql, user);
             } 
         }
+        */
 
         public async Task<UserEntity> GetByEmail(string email)
         {

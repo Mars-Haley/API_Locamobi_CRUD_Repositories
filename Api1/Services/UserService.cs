@@ -3,7 +3,6 @@ using User.Contracts.Repository;
 using User.Contracts.Service;
 using User.DTO;
 using User.Entity;
-using User.Infrastructure;
 using User.Response;
 using User.Response.User;
 
@@ -40,15 +39,15 @@ namespace User.Services
 
         public async Task<UserLoginResponse> Login(UserLoginDTO user)
         {
-           user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-           UserEntity newUser = await _repository.Login(user);
-           string token = _authentication.GenerateToken(newUser);
+            var validatedUser = await ValidateUser(user.Email, user.Password);
+            if (validatedUser == null)
+                throw new Exception("Invalid credentials");
+            string token = _authentication.GenerateToken(validatedUser);
            return new UserLoginResponse
            {
-               User = newUser,
+               User = validatedUser,
                Token = token
            };
-
         }
 
         public async Task<UserEntity> GetById(int id)
@@ -77,7 +76,11 @@ namespace User.Services
         public async Task<UserEntity> ValidateUser(string email, string password)
         {
             var user = await _repository.GetByEmail(email);
-            return user;
+            if (user == null)
+                return null;
+            
+            bool senhaCorreta= BCrypt.Net.BCrypt.Verify(password, user.Password);
+            return senhaCorreta ?  user : null;
         }
 
     }
