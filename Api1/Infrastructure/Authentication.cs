@@ -1,22 +1,27 @@
-﻿using Api1.Entity;
-using Api1.Models;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
+﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
-using Api1.Contracts.Service;
+using Microsoft.IdentityModel.Tokens;
+using User.Contracts.Infrastructure;
+using User.Entity;
 
-namespace Api1
+namespace User.Infrastructure
 {
-    public class TokenService : ITokenService
+    public class Authentication : IAuthentication
     {
-        public TokenResponseDTO GenerateToken(UserEntity user)
+        private readonly IConfiguration _configuration;
+
+        public Authentication(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+        public string GenerateToken(UserEntity user)
         {
             var handler = new JwtSecurityTokenHandler();
 
-            var key = Encoding.ASCII.GetBytes(Configuration.PrivateKey);
+            var key = Encoding.ASCII.GetBytes(_configuration["JwtSettings:SecretKey"]);
 
             var credentials = new SigningCredentials(
                 new SymmetricSecurityKey(key),
@@ -24,7 +29,7 @@ namespace Api1
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new[]
+                Subject = new ClaimsIdentity(new []
                 {
                 new Claim(ClaimTypes.Name, user.Name),
                 new Claim(ClaimTypes.Email, user.Email),
@@ -38,19 +43,12 @@ namespace Api1
 
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = credentials,
-                Issuer = "http://localhost:5150",
-                Audience = "http://localhost:5150"
+                Issuer = JwtConfig.Issuer,
+                Audience = JwtConfig.Audience
             };
             var token = handler.CreateToken(tokenDescriptor);
-            var accessToken = handler.WriteToken(token);
-            var refreshToken = GenerateRefreshToken();
+            return handler.WriteToken(token);
 
-            return new TokenResponseDTO
-            {
-                AccessToken = accessToken,
-                RefreshToken = refreshToken,
-                ExpiresIn = 7200
-            };
         }
 
         public string GenerateRefreshToken()
@@ -65,15 +63,18 @@ namespace Api1
         {
             var tokenValidationParameters = new TokenValidationParameters
             {
-                ValidateAudience = false,
-                ValidateIssuer = false,
+                ValidateAudience = true,
+                ValidAudience = JwtConfig.Audience,
+                ValidateIssuer = true,
+                ValidIssuer = JwtConfig.Issuer,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration.PrivateKey)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(JwtConfig.PrivateKey)),
                 ValidateLifetime = false
             };
             var tokenHandler = new JwtSecurityTokenHandler();
             var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out SecurityToken securityToken);
-            if (securityToken is not JwtSecurityToken jwtSecurityToken || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+            if (securityToken is not JwtSecurityToken jwtSecurityToken ||
+                !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
                 throw new SecurityTokenException("Invalid token");
             return principal;
         }

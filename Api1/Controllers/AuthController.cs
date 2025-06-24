@@ -1,27 +1,28 @@
-using Api1.Contracts.Service;
-using Api1.Models;
 using Microsoft.AspNetCore.Mvc;
+using User.Contracts.Infrastructure;
+using User.Contracts.Service;
+using User.DTO;
 
-namespace Api1.Controllers
+namespace User.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class AuthController : ControllerBase
     {
         private readonly IUserService _userService;
-        private readonly ITokenService _tokenService;
-        public AuthController(IUserService userService, ITokenService tokenService){
+        private readonly IAuthentication _authentication;
+        public AuthController(IUserService userService, IAuthentication authentication){
             _userService = userService;
-            _tokenService = tokenService;
+            _authentication = authentication;
         }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> Login([FromBody] LoginRequestDTO requestDto)
+        public async Task<IActionResult> Login([FromBody] UserLoginDTO dto)
         {
-            var user = await _userService.ValidateUser(requestDto.Email, requestDto.Password);
+            var user = await _userService.ValidateUser(dto.Email, dto.Password);
             if (user == null)
                 return BadRequest("Invalid credentials");
-            var token = _tokenService.GenerateToken(user);
+            var token = _authentication.GenerateToken(user);
             return Ok(token);
         }
     }

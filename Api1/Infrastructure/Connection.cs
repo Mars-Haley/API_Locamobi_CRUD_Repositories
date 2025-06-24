@@ -1,8 +1,8 @@
-﻿using Api1.Contracts.Infrastructure;
-using Dapper;
+﻿using Dapper;
 using MySql.Data.MySqlClient;
+using User.Contracts.Infrastructure;
 
-namespace Api1.Infrastructure
+namespace User.Infrastructure
 {
     public class Connection : IConnection
     {

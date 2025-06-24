@@ -1,4 +1,4 @@
-﻿namespace Api1.Response
+﻿namespace User.Response
 {
     public class MessageResponse
     {

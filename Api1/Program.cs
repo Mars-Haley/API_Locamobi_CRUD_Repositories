@@ -1,17 +1,15 @@
-using Api1.Contracts.Infrastructure;
-using Api1.Contracts.Repository;
-using Api1.Contracts.Service;
-using Api1.Entity;
-using Api1.Infrastructure;
-using Api1.Repository;
-using Api1.Services;
+using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using User.Contracts.Infrastructure;
+using User.Contracts.Repository;
+using User.Contracts.Service;
 using User.Infrastructure;
+using User.Repository;
+using User.Services;
 
-namespace Api1
+namespace User
 {
     public class Program
     {
@@ -21,16 +19,45 @@ namespace Api1
 
             //dependency
             builder.Services.AddScoped<IUserService, UserService>();
-            builder.Services.AddTransient<IUserRepository, UserRepository>();
-            builder.Services.AddTransient<TokenService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<Authentication>();
+            builder.Services.AddScoped<IAuthentication, Authentication>();
             builder.Services.AddSingleton<IConnection, Connection>();
-            builder.Services.AddScoped<ITokenService, TokenService>();
-            builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(
-                "Server=localhost;Database=locamobi;User=root;Password=root;" ,
-                ServerVersion.AutoDetect("Server=localhost;Database=locamobi;User=root;Password=root;")));
+            
+
+            
+            //ADIÇÃO DO BEARER NO SWAGGER 
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
+                {
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer",
+                    In = ParameterLocation.Header
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Scheme = "oauth2",
+                            Name = "Bearer",
+                            In = ParameterLocation.Header
+                        },
+                        new List<string>() {}
+                    }
+                });
+            });
 
             // JWT Config
-            var key = Encoding.ASCII.GetBytes(Configuration.PrivateKey);
+            var key = Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:SecretKey"]);
             builder.Services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -43,11 +70,12 @@ namespace Api1
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = false,
-                    ValidIssuer = "http://localhost:5150",
-                    ValidateAudience = false,
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
                     ValidateLifetime = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidIssuer = JwtConfig.Issuer,
+                    ValidAudience = JwtConfig.Audience,
                     ClockSkew = TimeSpan.Zero
                 };
             });
@@ -71,11 +99,8 @@ namespace Api1
 
             app.UseHttpsRedirection();
             app.UseAuthentication();
-
             app.UseAuthorization();
-
             app.MapControllers();
-
             app.Run();
         }
     }

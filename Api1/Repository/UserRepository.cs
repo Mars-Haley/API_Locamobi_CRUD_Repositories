@@ -1,39 +1,21 @@
-﻿using Api1.Contracts.Infrastructure;
-using Api1.Contracts.Repository;
-using Api1.DTO;
-using Api1.Entity;
-using Dapper;
-using Microsoft.EntityFrameworkCore;
+﻿using Dapper;
 using MySql.Data.MySqlClient;
-using User.Infrastructure;
+using User.Contracts.Infrastructure;
+using User.Contracts.Repository;
+using User.DTO;
+using User.Entity;
 
-namespace Api1.Repository
+namespace User.Repository
 {
     public class UserRepository : IUserRepository
     {
         private IConnection _connection;
-        private AppDbContext _dbContext;
 
-        public UserRepository(IConnection connection, AppDbContext dbContext)
+        public UserRepository(IConnection connection)
         {
             _connection = connection;
-            _dbContext = dbContext;
         }
 
-        public async Task<IEnumerable<string>> GetUserNameInCity3()
-        {
-            var names = await (from u in _dbContext.Users
-                    where u.CityId == 3
-                        select u.Name).ToListAsync();
-            return names;
-        }
-
-        public async Task<IEnumerable<UserEntity>> GetUsersStartWithA()
-        {
-            var allUsers = await GetAll();
-            var filtered = allUsers.Where(u => u.Name.StartsWith("A"));
-            return filtered;
-        }
         public async Task Delete(int id)
         {
             string sql = @$"DELETE FROM USUARIO 
@@ -48,7 +30,6 @@ namespace Api1.Repository
                 string sql = $@"SELECT CODUSER AS {nameof(UserEntity.Id)},
                                 NOME AS {nameof(UserEntity.Name)},
                                 EMAIL AS {nameof(UserEntity.Email)},
-                                SENHA AS {nameof(UserEntity.Password)},
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
                                 CIDADE_CODCID AS {nameof(UserEntity.CityId)}
@@ -66,7 +47,6 @@ namespace Api1.Repository
                 string sql = $@"SELECT CODUSER AS {nameof(UserEntity.Id)},
                                 NOME AS {nameof(UserEntity.Name)},
                                 EMAIL AS {nameof(UserEntity.Email)},
-                                SENHA AS {nameof(UserEntity.Password)},
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
                                 CIDADE_CODCID AS {nameof(UserEntity.CityId)}
@@ -77,6 +57,20 @@ namespace Api1.Repository
             }
 
         }
+
+        public async Task<UserEntity> Login(UserLoginDTO user)
+        {
+            using (MySqlConnection con = _connection.GetConnection())
+            {
+                string sql = $@"SELECT CODUSER AS {nameof(UserEntity.Id)},
+                                NOME AS  {nameof(UserEntity.Name)},
+                                EMAIL AS {nameof(UserEntity.Email)},
+                                FROM USUARIO)
+                                WHERE EMAIL = @Email AND SENHA = @Password";
+                return await con.QueryFirstAsync<UserEntity>(sql, user);
+            } 
+        }
+
         public async Task<UserEntity> GetByEmail(string email)
         {
             using (MySqlConnection con = _connection.GetConnection())

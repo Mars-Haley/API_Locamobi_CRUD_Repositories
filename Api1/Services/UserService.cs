@@ -1,20 +1,24 @@
-﻿using Api1.Contracts.Repository;
-using Api1.Contracts.Service;
-using Api1.DTO;
-using Api1.Entity;
-using Api1.Response;
-using Api1.Response.User;
+﻿using User.Contracts.Infrastructure;
+using User.Contracts.Repository;
+using User.Contracts.Service;
+using User.DTO;
+using User.Entity;
+using User.Infrastructure;
+using User.Response;
+using User.Response.User;
 
-namespace Api1.Services
+namespace User.Services
 {
     public class UserService : IUserService
     {
 
         private IUserRepository _repository;
+        private IAuthentication _authentication;
 
-        public UserService(IUserRepository repository)
+        public UserService(IUserRepository repository, IAuthentication authentication)
         {
             _repository = repository;
+            _authentication = authentication;
         }
 
         public async Task<MessageResponse> Delete(int id)
@@ -23,20 +27,6 @@ namespace Api1.Services
             return new MessageResponse
             {
                 Message = "Usuário excluído com sucesso!"
-            };
-        }
-        public async Task<UserNameResponse> GetUsersInCity3()
-        {
-            return new UserNameResponse()
-            {
-                Names = await _repository.GetUserNameInCity3()
-            };
-        }
-        public async Task<UserGetAllResponse> GetUsersStartWithA()
-        {
-            return new UserGetAllResponse
-            {
-                Data = await _repository.GetUsersStartWithA()
             };
         }
 
@@ -48,6 +38,19 @@ namespace Api1.Services
             };
         }
 
+        public async Task<UserLoginResponse> Login(UserLoginDTO user)
+        {
+           user.Password = Criptografia.Criptografar(user.Password);
+           UserEntity newUser = await _repository.Login(user);
+           string token = _authentication.GenerateToken(newUser);
+           return new UserLoginResponse
+           {
+               User = newUser,
+               Token = token
+           };
+
+        }
+
         public async Task<UserEntity> GetById(int id)
         {
             return await _repository.GetById(id);
@@ -55,6 +58,7 @@ namespace Api1.Services
 
         public async Task<MessageResponse> Post(UserInsertDTO user)
         {
+            user.Password = Criptografia.Criptografar(user.Password);
             await _repository.Insert(user);
             return new MessageResponse
             {

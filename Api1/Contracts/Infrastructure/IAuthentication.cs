@@ -1,12 +1,11 @@
 using System.Security.Claims;
-using Api1.Entity;
-using Api1.Models;
+using User.Entity;
 
-namespace Api1.Contracts.Service;
+namespace User.Contracts.Infrastructure;
 
-public interface ITokenService
+public interface IAuthentication
 {
-    TokenResponseDTO GenerateToken(UserEntity user);
+    string GenerateToken(UserEntity user);
     string GenerateRefreshToken();
     ClaimsPrincipal GetPrincipalFromExpiredToken(string token);
     ClaimsIdentity GenerateClaims (UserEntity user);

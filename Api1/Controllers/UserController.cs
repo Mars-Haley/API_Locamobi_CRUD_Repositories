@@ -1,12 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Api1.Contracts.Service;
-using Api1.Response.User;
-using Api1.DTO;
-using Api1.Response;
-using Api1.Entity;
-using Api1.Contracts.Repository;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using User.Contracts.Repository;
+using User.Contracts.Service;
+using User.DTO;
+using User.Entity;
+using User.Response;
+using User.Response.User;
 
-namespace Api1.Controllers
+namespace User.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -21,12 +22,14 @@ namespace Api1.Controllers
             _repository = userRepository;
         }
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<UserGetAllResponse>> Get()
         {
             return Ok(await _repository.GetAll());
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<UserGetAllResponse>> GetById(int id)
         {
             return Ok(await _service.GetById(id));
@@ -38,25 +41,17 @@ namespace Api1.Controllers
             return Ok(await _service.Post(user));
         }
 
-        [HttpGet("name/A")]
-        public async Task<ActionResult<UserGetAllResponse>> GetUsersStartWithA()
-        {
-            return Ok(await _service.GetUsersStartWithA());
-        }
 
-        [HttpGet("city/3")]
-        public async Task<ActionResult<UserGetAllResponse>> GetUsersInCity3()
-        {
-            return Ok(await _service.GetUsersInCity3());
-        }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<ActionResult<MessageResponse>> Delete(int id)
         {
             return Ok(await _service.Delete(id));
         }
 
         [HttpPut]
+        [Authorize]
         public async Task<ActionResult<MessageResponse>> Update(UserEntity user)
         {
             return Ok(await _service.Update(user));

@@ -1,4 +1,4 @@
-namespace Api1.Models
+namespace User.DTO
 {
     public class TokenResponseDTO
     {

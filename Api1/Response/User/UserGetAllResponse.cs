@@ -1,6 +1,6 @@
-﻿using Api1.Entity;
+﻿using User.Entity;
 
-namespace Api1.Response.User
+namespace User.Response.User
 {
     public class UserGetAllResponse
     {
