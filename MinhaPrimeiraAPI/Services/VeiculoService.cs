@@ -39,13 +39,6 @@ namespace MinhaPrimeiraAPI.Services
 
         }
 
-        public async Task <List<VeiculoEntity>> GetByBrand(string marcaVeiculo)
-        {
-            return await _veiculoRepository.Veiculos
-                         .Where(v => v.Marca == marcaVeiculo)
-                         .ToListAsync();
-        }
-
 
         public async Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo)
         {

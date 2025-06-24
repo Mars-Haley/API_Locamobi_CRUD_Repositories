@@ -12,7 +12,6 @@ namespace MinhaPrimeiraAPI.Contracts.Service
         Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo);
         Task<MessageResponse> Post(VeiculoInsertDTO postVeiculo);
         Task<MessageResponse> Update(VeiculoEntity updateVeiculo);
-        Task <List<VeiculoEntity>> GetByBrand(string marcaVeiculo);
-        Task<List<VeiculoEntity>> Veiculos { get; set; }
+       
     }
 }

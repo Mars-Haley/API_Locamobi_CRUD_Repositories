@@ -6,8 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using MinhaPrimeiraAPI.Contracts.Infrastructure;
 using MinhaPrimeiraAPI.Contracts.Service;
 using MinhaPrimeiraAPI.Services;
-using Models;
-using Services;
 
 namespace MinhaPrimeiraAPI
 {
@@ -16,7 +14,6 @@ namespace MinhaPrimeiraAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddTransient<TokenService>();
 
             // Add services to the container.
 
@@ -32,14 +29,7 @@ namespace MinhaPrimeiraAPI
 
             builder.Services.AddSwaggerGen();
 
-            var app = builder.Build();//problem
-
-            app.MapPost("/token", (TokenService service, [FromBody] VeiculoInfo veiculo) =>
-            {
-                var token = service.Generate(veiculo);
-                return Results.Ok(new { token });
-            });
-
+            var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

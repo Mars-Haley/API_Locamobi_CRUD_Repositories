@@ -2569,23 +2569,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuário\\.nuget\\packages\\": {},
+    "C:\\Users\\joao.eskelsen\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuário\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraApi\\MinhaPrimeiraAPI.csproj",
+      "projectUniqueName": "C:\\Users\\joao.eskelsen\\source\\repos\\API_Locamobi_CRUD_Repositories2\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
       "projectName": "MinhaPrimeiraAPI",
-      "projectPath": "C:\\Users\\Usuário\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraApi\\MinhaPrimeiraAPI.csproj",
-      "packagesPath": "C:\\Users\\Usuário\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuário\\source\\repos\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraApi\\obj\\",
+      "projectPath": "C:\\Users\\joao.eskelsen\\source\\repos\\API_Locamobi_CRUD_Repositories2\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\MinhaPrimeiraAPI.csproj",
+      "packagesPath": "C:\\Users\\joao.eskelsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joao.eskelsen\\source\\repos\\API_Locamobi_CRUD_Repositories2\\API_Locamobi_CRUD_Repositories\\MinhaPrimeiraAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuário\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joao.eskelsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2594,6 +2594,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2606,13 +2607,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net7.0": {
@@ -2658,7 +2653,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
