@@ -68,7 +68,7 @@ namespace User.Infrastructure
                 ValidateIssuer = true,
                 ValidIssuer = JwtConfig.Issuer,
                 ValidateIssuerSigningKey = true,
-                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(JwtConfig.PrivateKey)),
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JwtSettings:SecretKey"])),
                 ValidateLifetime = false
             };
             var tokenHandler = new JwtSecurityTokenHandler();

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using User.Contracts.Infrastructure;
 using User.Contracts.Service;
@@ -19,15 +20,18 @@ namespace User.Controllers
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] UserLoginDTO dto)
         {
-            try
-            {
-                return Ok(await _userService.Login(dto));
-            }
-            catch (Exception ex)
-            {
-                return Unauthorized();
-            }
+            var user = await _userService.ValidateUser(dto.Email, dto.Password);
+            if (user == null)
+                return BadRequest("Invalid credentials");
+            var token = _authentication.GenerateToken(user);
+            return Ok(token);
+        }
+
+        [HttpPost("HandShake")]
+        [Authorize]
+        public async Task<IActionResult> HandShake()
+        {
+            return Ok(new {});
         }
     }
-
 }

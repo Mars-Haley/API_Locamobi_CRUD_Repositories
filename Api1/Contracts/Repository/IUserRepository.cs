@@ -7,7 +7,7 @@ namespace User.Contracts.Repository
     {
         Task<IEnumerable<UserEntity>> GetAll();
         Task<UserEntity> GetById(int id);
-        // Task<UserEntity> Login(UserLoginDTO user);
+        Task<UserEntity> Login(UserLoginDTO user);
         Task<UserEntity> GetByEmail(string email);
         Task Insert(UserInsertDTO user);
         Task Delete(int id);

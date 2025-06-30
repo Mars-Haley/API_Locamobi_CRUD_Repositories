@@ -3433,9 +3433,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\User.csproj",
-      "projectName": "User",
-      "projectPath": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\User.csproj",
+      "projectUniqueName": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\Locamobi.csproj",
+      "projectName": "Locamobi",
+      "projectPath": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\Locamobi.csproj",
       "packagesPath": "C:\\Users\\christopher.oliveir\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\christopher.oliveir\\source\\repos\\ApiUsuario\\Api1\\obj\\",
       "projectStyle": "PackageReference",
