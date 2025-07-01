@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_Locamobi_CRUD_Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdfc079f402a595d8a58cf9dc74692fc32530d22")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_Locamobi_CRUD_Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_Locamobi_CRUD_Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

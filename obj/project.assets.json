@@ -2254,23 +2254,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucas\\.nuget\\packages\\": {},
+    "C:\\Users\\vitor.silva28\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\source\\repositórios Entra 21\\API_Locamobi_CRUD_Repositories\\API_Locamobi_CRUD_Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\vitor.silva28\\Source\\Repos\\API_Locamobi_CRUD_Repositories\\API_Locamobi_CRUD_Repositories.csproj",
       "projectName": "API_Locamobi_CRUD_Repositories",
-      "projectPath": "C:\\Users\\lucas\\source\\repositórios Entra 21\\API_Locamobi_CRUD_Repositories\\API_Locamobi_CRUD_Repositories.csproj",
-      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\source\\repositórios Entra 21\\API_Locamobi_CRUD_Repositories\\obj\\",
+      "projectPath": "C:\\Users\\vitor.silva28\\Source\\Repos\\API_Locamobi_CRUD_Repositories\\API_Locamobi_CRUD_Repositories.csproj",
+      "packagesPath": "C:\\Users\\vitor.silva28\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vitor.silva28\\Source\\Repos\\API_Locamobi_CRUD_Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vitor.silva28\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2279,6 +2279,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2291,13 +2292,7 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net7.0": {
@@ -2339,7 +2334,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
