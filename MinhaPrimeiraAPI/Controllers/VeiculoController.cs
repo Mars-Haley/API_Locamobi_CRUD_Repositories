@@ -50,17 +50,6 @@ namespace MinhaPrimeiraAPI.Controllers
             return Ok(await _veiculoService.Update(updateVeiculo));
         }
 
-        [HttpGet("{Marca}")]
-        public async Task<ActionResult<VeiculoEntity>> GetByBrand()
-        {
-            
-             var list = await VeiculoEntity.erro aqui
-                .Where(v => v.Marca == marca)
-                .ToListAsync();
-
-            return Ok(list);
-
-        }
 
 
     }
