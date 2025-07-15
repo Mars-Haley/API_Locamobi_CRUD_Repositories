@@ -112,5 +112,27 @@ namespace User.Repository
                             WHERE CODUSER = @Id";
             await _connection.Execute(sql, user);
         }
+
+        public async Task<bool> SaveRecuperationToken(string email, string token, DateTime expira)
+        {
+            using (MySqlConnection con = _connection.GetConnection())
+            {
+                var query = @"UPDATE USUARIO SET TOKEN_RECUPERACAO = @Token, TOKEN_EXPIRA = @Expira WHERE email = @Email";
+                var result = await con.ExecuteAsync(query, new { Email = email, Token = token, Expira = expira });
+                return result > 0;
+            }
+        }
+
+        public async Task<bool> UpdatePasswordByToken(string token, string novaSenha)
+        {
+            using (MySqlConnection con = _connection.GetConnection())
+            {
+                var query = @"UPDATE USUARIO SET senha = @Senha, token_recuperacao = NULL, token_expira = NULL 
+                  WHERE token_recuperacao = @Token AND token_expira > NOW()";
+                var result = await con.ExecuteAsync(query, new { Token = token, Senha = novaSenha });
+
+                return result > 0;
+            }
+        }
     }
 }

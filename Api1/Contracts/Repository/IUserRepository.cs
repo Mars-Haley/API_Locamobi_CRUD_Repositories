@@ -12,5 +12,7 @@ namespace User.Contracts.Repository
         Task Insert(UserInsertDTO user);
         Task Delete(int id);
         Task Update(UserEntity user);
+        Task<bool> SaveRecuperationToken(string email, string token, DateTime expira);
+        Task<bool> UpdatePasswordByToken(string token, string novaSenha);
     }
 }
