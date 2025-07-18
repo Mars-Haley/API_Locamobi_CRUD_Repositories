@@ -80,6 +80,16 @@ namespace User
                 };
             });
 
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("DevCorsPolicy", policy =>
+                {
+                    policy
+                        .AllowAnyOrigin()   // Libera qualquer origem (⚠️ não use em produção)
+                        .AllowAnyMethod()   // GET, POST, PUT, DELETE, etc
+                        .AllowAnyHeader();  // Libera todos os headers
+                });
+            });
 
             // Add services to the container.
 
