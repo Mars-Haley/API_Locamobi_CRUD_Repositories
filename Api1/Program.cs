@@ -107,6 +107,7 @@ namespace User
                 app.UseSwaggerUI();
             }
 
+            app.UseCors("DevCorsPolicy");
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
