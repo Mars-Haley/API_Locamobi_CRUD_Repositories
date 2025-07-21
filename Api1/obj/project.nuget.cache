@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iuaxtASj0v8c74Po4mPsz7kNqIXA99tKtrVij3MpvZzBuo5urxvk+AWXSfSgrsp88izbcax+YADLXLj9Zd2hUQ==",
+  "dgSpecHash": "jfCwaHGoGAw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\christopher.oliveir\\source\\repos\\API_Locamobi_CRUD_Repositories\\Api1\\Locamobi.csproj",
+  "projectFilePath": "C:\\Users\\christopher.oliveir\\RiderProjects\\API_Locamobi_CRUD_Repositories\\Api1\\Locamobi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\christopher.oliveir\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\christopher.oliveir\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",

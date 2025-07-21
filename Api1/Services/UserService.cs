@@ -80,5 +80,15 @@ namespace User.Services
             return user;
         }
 
+        public async Task<MessageResponse> UpdatePassword(UserEntity user, string token, string newPassword)
+        {
+            user.Password = Cryptography.Encrypt(user.Password);
+            await _repository.UpdatePasswordByToken(token,newPassword);
+            return new MessageResponse
+            {
+                Message = "Senha alterada com sucesso!"
+            };
+        }
+
     }
 }

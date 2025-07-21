@@ -100,8 +100,8 @@ namespace User.Repository
 
         public async Task Insert(UserInsertDTO user)
         {
-            string sql = $@"INSERT INTO USUARIO (NOME,EMAIL,SENHA,NUMERO,ENDERECO,CIDADE_CODCID,GENERO,DATA_NASCIMENTO)
-                            VALUES(@Name,@Email,@Password,@PhoneNumber,@Address,@CityId,@GenderText,@Birthday)";
+            string sql = $@"INSERT INTO USUARIO (NOME,EMAIL,CPF,SENHA,NUMERO,ENDERECO,CIDADE_CODCID,GENERO,DATA_NASCIMENTO)
+                            VALUES(@Name,@Email,@Cpf,@Password,@PhoneNumber,@Address,@CityId,@Gender,@Birthday)";
             await _connection.Execute(sql, user);
         }
 
@@ -113,29 +113,28 @@ namespace User.Repository
                             EMAIL = @Email,
                             ENDERECO = @Address,
                             NUMERO = @PhoneNumber,
-                            SENHA = @Password,
-                            GENERO = @GenderText,
+                            GENERO = @Gender
                             WHERE CODUSER = @Id";
             await _connection.Execute(sql, user);
         }
 
-        public async Task<bool> SaveRecuperationToken(string email, string token, DateTime expira)
+        public async Task<bool> SaveRecuperationToken(string email, string token, DateTime expires)
         {
             using (MySqlConnection con = _connection.GetConnection())
             {
                 var query = @"UPDATE USUARIO SET TOKEN_RECUPERACAO = @Token, TOKEN_EXPIRA = @Expira WHERE email = @Email";
-                var result = await con.ExecuteAsync(query, new { Email = email, Token = token, Expira = expira });
+                var result = await con.ExecuteAsync(query, new { Email = email, Token = token, Expira = expires });
                 return result > 0;
             }
         }
 
-        public async Task<bool> UpdatePasswordByToken(string token, string novaSenha)
+        public async Task<bool> UpdatePasswordByToken(string token, string newPassword)
         {
             using (MySqlConnection con = _connection.GetConnection())
             {
-                var query = @"UPDATE USUARIO SET senha = @Senha, token_recuperacao = NULL, token_expira = NULL 
+                var query = @"UPDATE USUARIO SET SENHA = @Senha, TOKEN_RECUPERACAO = NULL, TOKEN_EXPIRA = NULL 
                   WHERE token_recuperacao = @Token AND token_expira > NOW()";
-                var result = await con.ExecuteAsync(query, new { Token = token, Senha = novaSenha });
+                var result = await con.ExecuteAsync(query, new { Token = token, Senha = newPassword });
 
                 return result > 0;
             }
