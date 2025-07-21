@@ -55,7 +55,7 @@ namespace User.Controllers
             return Ok("Token enviado ao e-mail.");
         }
 
-        [HttpPost("reset-password")]
+        [HttpPut("reset-password")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDTO dto)
         {
             // Ideal: aplicar hash na senha

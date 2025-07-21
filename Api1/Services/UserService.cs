@@ -66,7 +66,8 @@ namespace User.Services
         }
 
         public async Task<MessageResponse> Update(UserEntity user)
-        {
+       {
+           user.Password = Cryptography.Encrypt(user.Password);
             await _repository.Update(user);
             return new MessageResponse
             {

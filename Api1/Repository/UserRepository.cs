@@ -32,7 +32,9 @@ namespace User.Repository
                                 EMAIL AS {nameof(UserEntity.Email)},
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
-                                CIDADE_CODCID AS {nameof(UserEntity.CityId)}
+                                CIDADE_CODCID AS {nameof(UserEntity.CityId)},
+                                GENERO AS  {nameof(UserEntity.GenderText)},
+                                DATA_NASCIMENTO AS {nameof(UserEntity.Birthday)}
                                 FROM USUARIO";
                 IEnumerable<UserEntity> userList = await con.QueryAsync<UserEntity>(sql);
 
@@ -49,7 +51,9 @@ namespace User.Repository
                                 EMAIL AS {nameof(UserEntity.Email)},
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
-                                CIDADE_CODCID AS {nameof(UserEntity.CityId)}
+                                CIDADE_CODCID AS {nameof(UserEntity.CityId)},
+                                GENERO AS {nameof(UserEntity.GenderText)},
+                                DATA_NASCIMENTO AS {nameof(UserEntity.Birthday)}
                                 FROM USUARIO 
                                 WHERE CODUSER = @Id";
                 UserEntity user = await con.QueryFirstAsync<UserEntity>(sql, new { id });
@@ -80,10 +84,11 @@ namespace User.Repository
                 string sql = $@"SELECT CODUSER AS {nameof(UserEntity.Id)},
                                 NOME AS {nameof(UserEntity.Name)},
                                 EMAIL AS {nameof(UserEntity.Email)},
-                                SENHA AS {nameof(UserEntity.Password)},
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
-                                CIDADE_CODCID AS {nameof(UserEntity.CityId)}
+                                CIDADE_CODCID AS {nameof(UserEntity.CityId)},
+                                GENERO AS {nameof(UserEntity.GenderText)},
+                                DATA_NASCIMENTO AS {nameof(UserEntity.Birthday)}
                                 FROM USUARIO
                                 WHERE EMAIL = @Email";
                 UserEntity? user = await con.QueryFirstOrDefaultAsync<UserEntity>(sql, new { email });
@@ -95,8 +100,8 @@ namespace User.Repository
 
         public async Task Insert(UserInsertDTO user)
         {
-            string sql = $@"INSERT INTO USUARIO (NOME,EMAIL,SENHA,NUMERO,ENDERECO,CIDADE_CODCID)
-                            VALUES(@Name,@Email,@Password,@PhoneNumber,@Address,@CityId)";
+            string sql = $@"INSERT INTO USUARIO (NOME,EMAIL,SENHA,NUMERO,ENDERECO,CIDADE_CODCID,GENERO,DATA_NASCIMENTO)
+                            VALUES(@Name,@Email,@Password,@PhoneNumber,@Address,@CityId,@GenderText,@Birthday)";
             await _connection.Execute(sql, user);
         }
 
@@ -108,7 +113,8 @@ namespace User.Repository
                             EMAIL = @Email,
                             ENDERECO = @Address,
                             NUMERO = @PhoneNumber,
-                            SENHA = @Password
+                            SENHA = @Password,
+                            GENERO = @GenderText,
                             WHERE CODUSER = @Id";
             await _connection.Execute(sql, user);
         }

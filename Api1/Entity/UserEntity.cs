@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using User.Enums;
 
 namespace User.Entity
 {
@@ -12,6 +13,8 @@ namespace User.Entity
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
         public int CityId { get; set; }
+        public DateTime Birthday { get; set; }
+        public Gender Gender { get; set; }
 
         public string Password
         {
@@ -19,8 +22,32 @@ namespace User.Entity
             set { _password = value; }
         }
 
+        public string GenderText
+        {
+            get => Gender.ToString();
+            set => Gender = StringToGender(value);
+        }
 
-        public UserEntity(int id, string name, string email, string password, string phoneNumber, string address, int cityId)
+        private static string GenderToString(Gender gender) => gender switch
+        {
+            Gender.Man => "HOMEM",
+            Gender.Woman => "MULHER",
+            Gender.NonBinary => "NB",
+            Gender.NotAssigned => "N/A",
+            _ => throw new ArgumentOutOfRangeException(nameof(gender), gender, null)
+        };
+
+        private static Gender StringToGender(string text) => text switch
+        {
+            "HOMEM" => Gender.Man,
+            "MULHER" => Gender.Woman,
+            "NB" => Gender.NonBinary,
+            "NA" => Gender.NotAssigned,
+            _ => throw new ArgumentOutOfRangeException(nameof(text), text, null)
+        };
+
+
+        public UserEntity(int id, string name, string email, string password, string phoneNumber, string address, int cityId, DateTime birthday, Gender gender)
         {
             Id = id;
             Name = name;
@@ -29,6 +56,8 @@ namespace User.Entity
             PhoneNumber = phoneNumber;
             Address = address;
             CityId = cityId;
+            Birthday = birthday;
+            Gender = gender;
         }
 
         public UserEntity(){}
