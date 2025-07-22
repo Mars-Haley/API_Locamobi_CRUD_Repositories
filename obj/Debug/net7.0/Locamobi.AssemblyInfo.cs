@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Locamobi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23f44df0e57ee2b9726e60dfa485c569b131a23d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Locamobi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Locamobi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

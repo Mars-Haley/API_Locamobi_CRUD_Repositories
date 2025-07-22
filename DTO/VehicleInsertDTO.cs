@@ -1,6 +1,6 @@
 ﻿namespace Locamobi_CRUD_Repositories.DTO
 {
-    public class VeiculoInsertDTO
+    public class VehicleInsertDTO
     {
         public int CodVeiculo { get; set; }
         public string Modelo { get; set; }

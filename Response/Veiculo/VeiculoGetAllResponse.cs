@@ -4,7 +4,7 @@ namespace Locamobi.Response.Veiculo
 {
     public class VeiculoGetAllResponse
     {   
-        public IEnumerable<VeiculoEntity> Data { get; set; }
+        public IEnumerable<VehicleEntity> Data { get; set; }
     
     }
 }

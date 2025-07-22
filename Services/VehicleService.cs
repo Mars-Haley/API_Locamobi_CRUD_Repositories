@@ -10,19 +10,19 @@ using Locamobi.Response.Veiculo;
 namespace Locamobi.Services
 {
 
-    public class VeiculoService : IVeiculoService
+    public class VehicleService : IVehicleService
     {
 
-        private IVeiculoRepository _veiculoRepository;
+        private IVehicleRepository _vehicleRepository;
 
-        public VeiculoService(IVeiculoRepository veiculoRepository)
+        public VehicleService(IVehicleRepository vehicleRepository)
         {
-            _veiculoRepository = veiculoRepository;
+            _vehicleRepository = vehicleRepository;
         }
 
         public async Task<MessageResponse> Delete(int id)//verificar esse id
         {
-            await _veiculoRepository.Delete(id);
+            await _vehicleRepository.Delete(id);
             return new MessageResponse
             {
                 Message = "Veiculo deletado com sucesso."
@@ -34,29 +34,29 @@ namespace Locamobi.Services
         {
             return new VeiculoGetAllResponse
             {
-                Data = await _veiculoRepository.GetAll()
+                Data = await _vehicleRepository.GetAll()
             };
 
         }
 
 
-        public async Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo)
+        public async Task<VehicleEntity> GetByCodVeiculo(int codVeiculo)
         {
-            return await _veiculoRepository.GetByCodVeiculo(codVeiculo);
+            return await _vehicleRepository.GetByCodVeiculo(codVeiculo);
         }
 
-        public async Task<MessageResponse> Post(VeiculoInsertDTO veiculo)
+        public async Task<MessageResponse> Post(VehicleInsertDTO vehicle)
         {
-            await _veiculoRepository.Insert(veiculo);
+            await _vehicleRepository.Insert(vehicle);
             return new MessageResponse
             {
                 Message = "Veiculo cadastrado com sucesso."
             };
         }
 
-        public async Task<MessageResponse> Update(VeiculoEntity veiculo)
+        public async Task<MessageResponse> Update(VehicleEntity vehicle)
         {
-            await _veiculoRepository.Update(veiculo);
+            await _vehicleRepository.Update(vehicle);
             return new MessageResponse
             {
                 Message = "Veiculo atualizado com sucesso."

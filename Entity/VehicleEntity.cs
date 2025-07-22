@@ -1,6 +1,6 @@
 ﻿namespace Locamobi_CRUD_Repositories.Entity
 {
-    public class VeiculoEntity
+    public class VehicleEntity
     {
         public int CodVeiculo { get; set; }
         public string Modelo { get; set; }

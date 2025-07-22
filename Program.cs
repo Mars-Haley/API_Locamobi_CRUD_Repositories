@@ -25,8 +25,8 @@ namespace Locamobi
             builder.Services.AddScoped<Authentication>();
             builder.Services.AddScoped<IAuthentication, Authentication>();
             builder.Services.AddSingleton<IConnection, Connection>();
-            builder.Services.AddScoped<IVeiculoService, VeiculoService>();
-            builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
+            builder.Services.AddScoped<IVehicleService, VehicleService>();
+            builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
             builder.Services.AddScoped<IContractService, ContractService>();
             builder.Services.AddScoped<IContractRepository, ContractRepository>();
 

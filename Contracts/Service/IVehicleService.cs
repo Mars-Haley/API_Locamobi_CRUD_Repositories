@@ -5,13 +5,13 @@ using Locamobi.Response.Veiculo;
 
 namespace Locamobi.Contracts.Service
 {
-    public interface IVeiculoService
+    public interface IVehicleService
     {
         Task<MessageResponse> Delete(int codVeiculo);
         Task<VeiculoGetAllResponse> GetAll();
-        Task<VeiculoEntity> GetByCodVeiculo(int codVeiculo);
-        Task<MessageResponse> Post(VeiculoInsertDTO postVeiculo);
-        Task<MessageResponse> Update(VeiculoEntity updateVeiculo);
+        Task<VehicleEntity> GetByCodVeiculo(int codVeiculo);
+        Task<MessageResponse> Post(VehicleInsertDTO postVehicle);
+        Task<MessageResponse> Update(VehicleEntity updateVehicle);
        
     }
 }
