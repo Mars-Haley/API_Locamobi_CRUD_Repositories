@@ -10,14 +10,148 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e137828-1309-4156-8f95-64c23774e399" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Controllers/VeiculoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/Controllers/VeiculoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Locamobi/Locamobi.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Locamobi/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Locamobi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/Locamobi3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]1/Locamobi.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]1/Locamobi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]1/Locamobi.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]1/Locamobi.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]1/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_09_25__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Locamobi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]/MinhaPrimeiraAPI.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]/MinhaPrimeiraAPI.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]1/MinhaPrimeiraAPI.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]1/MinhaPrimeiraAPI.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]1/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_07_2025_08_18__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MinhaPrimeiraAPI/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Contracts/Infrastructure/IConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Contracts/Infrastructure/IConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Contracts/Repository/IVeiculoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Contracts/Repository/IVeiculoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Contracts/Service/IVeiculoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Contracts/Service/IVeiculoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Controllers/VeiculoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Controllers/VeiculoController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/DTO/VeiculoInsertDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/DTO/VeiculoInsertDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Entity/VeiculoEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Entity/VeiculoEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Infrastructure/Connection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Infrastructure/Connection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/MinhaPrimeiraAPI.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/MinhaPrimeiraAPI.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/MinhaPrimeiraAPI.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Repository/VeiculoRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Repository/VeiculoRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Response/MessageResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Response/MessageResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Response/Veiculo/VeiculoGetAllResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Response/Veiculo/VeiculoGetAllResponse.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/Services/VeiculoService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/Services/VeiculoService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/BouncyCastle.Cryptography.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/BouncyCastle.Cryptography.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Dapper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Dapper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Google.Protobuf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Google.Protobuf.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/K4os.Compression.LZ4.Streams.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/K4os.Compression.LZ4.Streams.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/K4os.Compression.LZ4.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/K4os.Compression.LZ4.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/K4os.Hash.xxHash.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/K4os.Hash.xxHash.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.Bcl.TimeProvider.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.Bcl.TimeProvider.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Microsoft.OpenApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Microsoft.OpenApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MinhaPrimeiraAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/MinhaPrimeiraAPI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MinhaPrimeiraAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MinhaPrimeiraAPI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/MinhaPrimeiraAPI.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MinhaPrimeiraAPI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MinhaPrimeiraAPI.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/MinhaPrimeiraAPI.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MinhaPrimeiraAPI.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/MinhaPrimeiraAPI.staticwebassets.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/MySql.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/MySql.Data.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Diagnostics.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Diagnostics.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.IO.Pipelines.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.IO.Pipelines.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Security.Permissions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Security.Permissions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Text.Encoding.CodePages.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Text.Encoding.CodePages.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Text.Encodings.Web.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Text.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Text.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/System.Windows.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/ZstdSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/ZstdSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win-x64/native/comerr64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win-x64/native/comerr64.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win-x64/native/gssapi64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win-x64/native/gssapi64.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win-x64/native/k5sprt64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win-x64/native/k5sprt64.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win-x64/native/krb5_64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win-x64/native/krb5_64.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win-x64/native/krbcc64.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win-x64/native/krbcc64.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Diagnostics.EventLog.Messages.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Diagnostics.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Text.Encoding.CodePages.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/ApiEndpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/ApiEndpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/EndpointInfo/MinhaPrimeiraAPI.OpenApiFiles.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/EndpointInfo/MinhaPrimeiraAPI.OpenApiFiles.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/EndpointInfo/MinhaPrimeiraAPI.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/EndpointInfo/MinhaPrimeiraAPI.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPri.730208C5.Up2Date" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPri.730208C5.Up2Date" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.BuildWithSkipAnalyzers" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.CopyComplete" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.CopyComplete" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Locamobi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/MinhaPrimeiraAPI.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/MinhaPrimeiraAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/bin/Debug/net7.0/Locamobi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/ref/MinhaPrimeiraAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/ref/MinhaPrimeiraAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/refint/MinhaPrimeiraAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/refint/MinhaPrimeiraAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets.build.endpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets.references.upToDateCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets.references.upToDateCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets.removed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets.removed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets/msbuild.build.MinhaPrimeiraAPI.props" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets/msbuild.build.MinhaPrimeiraAPI.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.MinhaPrimeiraAPI.props" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.MinhaPrimeiraAPI.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.MinhaPrimeiraAPI.props" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.MinhaPrimeiraAPI.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/MinhaPrimeiraAPI.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/MinhaPrimeiraAPI.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/MinhaPrimeiraAPI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/MinhaPrimeiraAPI.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Locamobi/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinhaPrimeiraAPI/obj/rider.project.restore.info" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +192,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.MinhaPrimeiraAPI: IIS Express.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,7 +207,7 @@
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MinhaPrimeiraAPI: IIS Express">
     <configuration name="MinhaPrimeiraAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MinhaPrimeiraAPI/MinhaPrimeiraAPI.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Locamobi/Locamobi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -87,7 +222,7 @@
       </method>
     </configuration>
     <configuration name="MinhaPrimeiraAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MinhaPrimeiraAPI/MinhaPrimeiraAPI.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Locamobi/Locamobi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -102,7 +237,7 @@
       </method>
     </configuration>
     <configuration name="MinhaPrimeiraAPI: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MinhaPrimeiraAPI/MinhaPrimeiraAPI.csproj" />
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Locamobi/Locamobi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net7.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
@@ -127,6 +262,7 @@
       <workItem from="1752496612570" duration="1487000" />
       <workItem from="1752578259276" duration="42000" />
       <workItem from="1752582331159" duration="45000" />
+      <workItem from="1753186708993" duration="55000" />
     </task>
     <servers />
   </component>
