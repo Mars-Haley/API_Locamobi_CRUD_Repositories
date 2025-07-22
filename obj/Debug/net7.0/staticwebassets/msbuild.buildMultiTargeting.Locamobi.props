@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Locamobi.props" />
+</Project>
