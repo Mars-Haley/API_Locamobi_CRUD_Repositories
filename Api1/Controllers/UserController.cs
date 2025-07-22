@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using User.Contracts.Repository;
-using User.Contracts.Service;
-using User.DTO;
-using User.Entity;
-using User.Response;
-using User.Response.User;
+using Locamobi.Contracts.Repository;
+using Locamobi.Contracts.Service;
+using Locamobi.DTO;
+using Locamobi.Entity;
+using Locamobi.Response;
+using Locamobi.Response.User;
 
-namespace User.Controllers
+namespace Locamobi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

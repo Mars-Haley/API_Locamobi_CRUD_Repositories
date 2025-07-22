@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace User.Enums;
+namespace Locamobi.Enums;
 
 public enum Gender
 {

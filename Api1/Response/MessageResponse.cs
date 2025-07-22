@@ -1,4 +1,4 @@
-﻿namespace User.Response
+﻿namespace Locamobi.Response
 {
     public class MessageResponse
     {

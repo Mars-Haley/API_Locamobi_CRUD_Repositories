@@ -4,10 +4,10 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using Microsoft.IdentityModel.Tokens;
-using User.Contracts.Infrastructure;
-using User.Entity;
+using Locamobi.Contracts.Infrastructure;
+using Locamobi.Entity;
 
-namespace User.Infrastructure
+namespace Locamobi.Infrastructure
 {
     public class Authentication : IAuthentication
     {

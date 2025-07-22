@@ -1,9 +1,9 @@
-﻿using User.DTO;
-using User.Entity;
-using User.Response;
-using User.Response.User;
+﻿using Locamobi.DTO;
+using Locamobi.Entity;
+using Locamobi.Response;
+using Locamobi.Response.User;
 
-namespace User.Contracts.Service
+namespace Locamobi.Contracts.Service
 {
     public interface IUserService
     {

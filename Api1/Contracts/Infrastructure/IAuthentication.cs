@@ -1,7 +1,7 @@
 using System.Security.Claims;
-using User.Entity;
+using Locamobi.Entity;
 
-namespace User.Contracts.Infrastructure;
+namespace Locamobi.Contracts.Infrastructure;
 
 public interface IAuthentication
 {

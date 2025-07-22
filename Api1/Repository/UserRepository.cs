@@ -1,11 +1,11 @@
 ﻿using Dapper;
 using MySql.Data.MySqlClient;
-using User.Contracts.Infrastructure;
-using User.Contracts.Repository;
-using User.DTO;
-using User.Entity;
+using Locamobi.Contracts.Infrastructure;
+using Locamobi.Contracts.Repository;
+using Locamobi.DTO;
+using Locamobi.Entity;
 
-namespace User.Repository
+namespace Locamobi.Repository
 {
     public class UserRepository : IUserRepository
     {

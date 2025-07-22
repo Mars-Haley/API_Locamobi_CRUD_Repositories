@@ -1,0 +1,9 @@
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.csproj.AssemblyReference.cache
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.AssemblyInfoInputs.cache
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.AssemblyInfo.cs
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.csproj.CoreCompileInputs.cache
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.RazorAssemblyInfo.cache
+C:\Users\christopher.oliveir\RiderProjects\API_Locamobi_CRUD_Repositories\obj\Debug\net7.0\Locamobi.RazorAssemblyInfo.cs

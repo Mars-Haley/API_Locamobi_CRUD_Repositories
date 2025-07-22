@@ -1,6 +1,6 @@
-﻿using User.Enums;
+﻿using Locamobi.Enums;
 
-namespace User.DTO
+namespace Locamobi.DTO
 {
     public class UserInsertDTO
     {

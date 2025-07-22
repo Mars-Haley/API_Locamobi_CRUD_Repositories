@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-using User.Enums;
+using Locamobi.Enums;
 
-namespace User.Entity
+namespace Locamobi.Entity
 {
     [Table("USUARIO")]
     public class UserEntity

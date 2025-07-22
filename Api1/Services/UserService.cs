@@ -1,13 +1,13 @@
-﻿using User.Contracts.Infrastructure;
-using User.Contracts.Repository;
-using User.Contracts.Service;
-using User.DTO;
-using User.Entity;
-using User.Infrastructure;
-using User.Response;
-using User.Response.User;
+﻿using Locamobi.Contracts.Infrastructure;
+using Locamobi.Contracts.Repository;
+using Locamobi.Contracts.Service;
+using Locamobi.DTO;
+using Locamobi.Entity;
+using Locamobi.Infrastructure;
+using Locamobi.Response;
+using Locamobi.Response.User;
 
-namespace User.Services
+namespace Locamobi.Services
 {
     public class UserService : IUserService
     {

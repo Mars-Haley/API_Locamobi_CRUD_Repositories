@@ -1,7 +1,7 @@
-﻿using User.DTO;
-using User.Entity;
+﻿using Locamobi.DTO;
+using Locamobi.Entity;
 
-namespace User.Contracts.Repository
+namespace Locamobi.Contracts.Repository
 {
     public interface IUserRepository
     {

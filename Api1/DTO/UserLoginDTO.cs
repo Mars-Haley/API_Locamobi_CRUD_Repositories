@@ -1,4 +1,4 @@
-namespace User.DTO
+namespace Locamobi.DTO
 {
     public class UserLoginDTO
     {

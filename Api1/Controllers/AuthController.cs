@@ -1,12 +1,10 @@
-using Api1.DTO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using User.Contracts.Infrastructure;
-using User.Contracts.Repository;
-using User.Contracts.Service;
-using User.DTO;
-using User.Helpers;
+using Locamobi.Contracts.Infrastructure;
+using Locamobi.Contracts.Repository;
+using Locamobi.Contracts.Service;
+using Locamobi.DTO;
+using Locamobi.Helpers;
 
 namespace User.Controllers
 {

@@ -1,8 +1,8 @@
 ﻿using Dapper;
 using MySql.Data.MySqlClient;
-using User.Contracts.Infrastructure;
+using Locamobi.Contracts.Infrastructure;
 
-namespace User.Infrastructure
+namespace Locamobi.Infrastructure
 {
     public class Connection : IConnection
     {

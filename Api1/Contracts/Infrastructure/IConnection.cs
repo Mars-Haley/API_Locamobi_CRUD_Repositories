@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 
-namespace User.Contracts.Infrastructure
+namespace Locamobi.Contracts.Infrastructure
 {
     public interface IConnection
     {

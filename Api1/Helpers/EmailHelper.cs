@@ -1,7 +1,7 @@
 ﻿using System.Net.Mail;
 using System.Net;
 
-namespace User.Helpers
+namespace Locamobi.Helpers
 {
     public static class EmailHelper
     {

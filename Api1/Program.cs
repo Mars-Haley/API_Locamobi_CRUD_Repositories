@@ -2,14 +2,14 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using User.Contracts.Infrastructure;
-using User.Contracts.Repository;
-using User.Contracts.Service;
-using User.Infrastructure;
-using User.Repository;
-using User.Services;
+using Locamobi.Contracts.Infrastructure;
+using Locamobi.Contracts.Repository;
+using Locamobi.Contracts.Service;
+using Locamobi.Infrastructure;
+using Locamobi.Repository;
+using Locamobi.Services;
 
-namespace User
+namespace Locamobi
 {
     public class Program
     {
@@ -23,9 +23,9 @@ namespace User
             builder.Services.AddScoped<Authentication>();
             builder.Services.AddScoped<IAuthentication, Authentication>();
             builder.Services.AddSingleton<IConnection, Connection>();
-            
 
-            
+
+
             //ADIÇÃO DO BEARER NO SWAGGER 
             builder.Services.AddSwaggerGen(c =>
             {

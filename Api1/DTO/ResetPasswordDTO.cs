@@ -1,4 +1,4 @@
-namespace Api1.DTO
+namespace Locamobi.DTO
 {
     public class ResetPasswordDTO
     {

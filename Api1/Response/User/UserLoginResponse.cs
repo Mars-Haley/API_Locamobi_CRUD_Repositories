@@ -1,6 +1,6 @@
-﻿using User.Entity;
+﻿using Locamobi.Entity;
 
-namespace User.Response.User;
+namespace Locamobi.Response.User;
 
 public class UserLoginResponse
 {
