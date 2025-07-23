@@ -31,7 +31,6 @@ namespace Locamobi.Repository
 
                 IEnumerable<CityEntity> cityList = await con.QueryAsync<CityEntity>(sql);
                 return cityList;
-
             }
         }
 

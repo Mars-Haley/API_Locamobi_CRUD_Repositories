@@ -4,13 +4,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Locamobi.Contracts.Infrastructure;
-using Locamobi.Contracts.Repository;
 using Locamobi.Contracts.Service;
 using Locamobi.Infrastructure;
 using Locamobi.Repository;
 using Locamobi.Services;
-using Locamobi.Contracts.Repository;
-using Locamobi.Repository;
 
 namespace Locamobi
 {
@@ -30,7 +27,7 @@ namespace Locamobi
             builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
             builder.Services.AddScoped<IContractService, ContractService>();
             builder.Services.AddScoped<IContractRepository, ContractRepository>();
-            builder.Services.AddScoped<CityService, CityService>();
+            builder.Services.AddScoped<ICityService, CityService>();
             builder.Services.AddScoped<ICityRepository, CityRepository>();
             builder.Services.AddScoped<IRatingRepository, RatingRepository>();
             builder.Services.AddScoped<IRatingService,  RatingService>();
