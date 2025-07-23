@@ -1,8 +1,8 @@
 ﻿using System.Text.RegularExpressions;
-using Locamobi_CRUD_Repositories.Contracts.Repository;
-using Locamobi_CRUD_Repositories.DTO;
-using Locamobi_CRUD_Repositories.Entity;
-using Locamobi_CRUD_Repositories.Repository;
+using Locamobi.Contracts.Repository;
+using Locamobi.DTO;
+using Locamobi.Entity;
+using Locamobi.Repository;
 using Locamobi.Contracts.Service;
 using Locamobi.Response;
 using Locamobi.Response.Veiculo;
@@ -40,9 +40,9 @@ namespace Locamobi.Services
         }
 
 
-        public async Task<VehicleEntity> GetByCodVeiculo(int codVeiculo)
+        public async Task<VehicleEntity> GetById(int id)
         {
-            return await _vehicleRepository.GetByCodVeiculo(codVeiculo);
+            return await _vehicleRepository.GetById(id);
         }
 
         public async Task<MessageResponse> Post(VehicleInsertDTO vehicle)

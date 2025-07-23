@@ -1,5 +1,5 @@
 using System.Text;
-using Crudzin.Contracts.Repository;
+using Locamobi.Contracts.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -9,8 +9,8 @@ using Locamobi.Contracts.Service;
 using Locamobi.Infrastructure;
 using Locamobi.Repository;
 using Locamobi.Services;
-using Locamobi_CRUD_Repositories.Contracts.Repository;
-using Locamobi_CRUD_Repositories.Repository;
+using Locamobi.Contracts.Repository;
+using Locamobi.Repository;
 
 namespace Locamobi
 {
@@ -32,6 +32,8 @@ namespace Locamobi
             builder.Services.AddScoped<IContractRepository, ContractRepository>();
             builder.Services.AddScoped<CityService, CityService>();
             builder.Services.AddScoped<ICityRepository, CityRepository>();
+            builder.Services.AddScoped<IRatingRepository, RatingRepository>();
+            builder.Services.AddScoped<IRatingService,  RatingService>();
 
 
 

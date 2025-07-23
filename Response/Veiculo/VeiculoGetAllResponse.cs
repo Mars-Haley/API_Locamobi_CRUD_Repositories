@@ -1,4 +1,4 @@
-﻿using Locamobi_CRUD_Repositories.Entity;
+﻿using Locamobi.Entity;
 
 namespace Locamobi.Response.Veiculo
 {

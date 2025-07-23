@@ -1,14 +1,14 @@
-﻿using Crudzin.DTO_;
+﻿using Locamobi.DTO_;
 using Locamobi.Entity;
 
-namespace Crudzin.Contracts.Repository
+namespace Locamobi.Contracts.Repository
 {
     public interface ICityRepository
     {
         Task<IEnumerable<CityEntity>> GetAll();
-        Task<CityEntity> GetById(int codigo);
+        Task<CityEntity> GetById(int id);
         Task Insert(CityInsertDTO city);
-        Task Delete(int codigo);
+        Task Delete(int id);
         Task Update(CityEntity city);
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using Locamobi_CRUD_Repositories.DTO;
-using Locamobi_CRUD_Repositories.Entity;
+using Locamobi.DTO;
+using Locamobi.Entity;
 using Locamobi.Contracts.Service;
 using Locamobi.Response;
 using Locamobi.Response.Veiculo;
@@ -26,10 +26,10 @@ namespace Locamobi.Controllers
             return Ok(await _vehicleService.GetAll());
         }
 
-        [HttpGet("{codVeiculo}")]
-        public async Task<ActionResult<VehicleEntity>> GetByCodVeiculo(int codVeiculo)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<VehicleEntity>> GetById(int id)
         {
-            return Ok(await _vehicleService.GetByCodVeiculo(codVeiculo));
+            return Ok(await _vehicleService.GetById(id));
         }
 
         [HttpPost]
@@ -38,10 +38,10 @@ namespace Locamobi.Controllers
             return Ok(await _vehicleService.Post(postVehicle));
         }
 
-        [HttpDelete("{codVeiculo}")]
-        public async Task<ActionResult<MessageResponse>> Delete(int codVeiculo)
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<MessageResponse>> Delete(int id)
         {
-            return Ok(await _vehicleService.Delete(codVeiculo));
+            return Ok(await _vehicleService.Delete(id));
         }
 
         [HttpPut]

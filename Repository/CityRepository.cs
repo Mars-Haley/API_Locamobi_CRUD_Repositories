@@ -1,5 +1,5 @@
-﻿using Crudzin.Contracts.Repository;
-using Crudzin.DTO_;
+﻿using Locamobi.Contracts.Repository;
+using Locamobi.DTO_;
 using Dapper;
 using Locamobi.Contracts.Infrastructure;
 using Locamobi.Entity;
@@ -59,7 +59,7 @@ namespace Locamobi.Repository
 
         }
 
-        public async Task<CityEntity> GetById(int codigo)
+        public async Task<CityEntity> GetById(int id)
         {
             using (MySqlConnection con = _connection.GetConnection())
             {
@@ -68,10 +68,10 @@ namespace Locamobi.Repository
                             NOMECID AS {nameof(CityEntity.Name)},
                             UF AS {nameof(CityEntity.UF)} 
                             FROM CIDADE
-                            WHERE CODCID = @codigo
+                            WHERE CODCID = @id
                             ";
 
-                CityEntity city = await con.QueryFirstAsync<CityEntity>(sql, new { id = codigo });
+                CityEntity city = await con.QueryFirstAsync<CityEntity>(sql, new { id });
                 return city;
             }
         }

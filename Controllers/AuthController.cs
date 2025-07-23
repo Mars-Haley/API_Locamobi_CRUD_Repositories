@@ -6,7 +6,7 @@ using Locamobi.Contracts.Service;
 using Locamobi.DTO;
 using Locamobi.Helpers;
 
-namespace User.Controllers
+namespace Locamobi.Controllers
 {
     [ApiController]
     [Route("[controller]")]

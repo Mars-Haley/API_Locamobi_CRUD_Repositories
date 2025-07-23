@@ -1,11 +1,11 @@
 ﻿using Dapper;
-using Locamobi_CRUD_Repositories.Contracts.Repository;
-using Locamobi_CRUD_Repositories.DTO;
-using Locamobi_CRUD_Repositories.Entity;
+using Locamobi.Contracts.Repository;
+using Locamobi.DTO;
+using Locamobi.Entity;
 using Locamobi.Contracts.Infrastructure;
 using MySql.Data.MySqlClient;
 
-namespace Locamobi_CRUD_Repositories.Repository
+namespace Locamobi.Repository
 {
 
     public class VehicleRepository : IVehicleRepository
@@ -23,7 +23,7 @@ namespace Locamobi_CRUD_Repositories.Repository
             using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql = $@"
-                        SELECT CODVEICULO AS {nameof(VehicleEntity.CodVeiculo)},
+                        SELECT CODVEICULO AS {nameof(VehicleEntity.Id)},
                          MODELO AS {nameof(VehicleEntity.Modelo)},
                             MARCA AS {nameof(VehicleEntity.Marca)},
                               ANO AS {nameof(VehicleEntity.Ano)},
@@ -40,19 +40,19 @@ namespace Locamobi_CRUD_Repositories.Repository
             }
         }
 
-        public async Task Delete(int codVeiculo)
+        public async Task Delete(int id)
         {
-            string sql = "DELETE FROM veiculo WHERE CODVEICULO = @codVeiculo";
-            await _connection.Execute(sql, new {codVeiculo});
+            string sql = "DELETE FROM veiculo WHERE CODVEICULO = @Id";
+            await _connection.Execute(sql, new {id});
 
         }
 
-        public async Task<VehicleEntity> GetByCodVeiculo(int codVeiculo) 
+        public async Task<VehicleEntity> GetById(int id) 
         {
             using (MySqlConnection con = _connection.GetConnection())
             {
                 string sql =$@"
-                        SELECT CODVEICULO AS {nameof(VehicleEntity.CodVeiculo)},
+                        SELECT CODVEICULO AS {nameof(VehicleEntity.Id)},
                          MODELO AS {nameof(VehicleEntity.Modelo)},
                             MARCA AS {nameof(VehicleEntity.Marca)},
                               ANO AS {nameof(VehicleEntity.Ano)},
@@ -62,8 +62,8 @@ namespace Locamobi_CRUD_Repositories.Repository
                                       CLASSIFIC AS {nameof(VehicleEntity.Classific)},
                                         TIPO AS {nameof(VehicleEntity.Tipo)}
                             FROM veiculo
-                            WHERE CODVEICULO = @CodVeiculo";//Adionar o USUARIO_CODUSER {nameof(VeiculoEntity.USUARIO_CODUSER)} apos merge.
-                VehicleEntity vehicleEntity = await con.QueryFirstAsync<VehicleEntity>(sql, new {codVeiculo});
+                            WHERE CODVEICULO = @Id";//Adionar o USUARIO_CODUSER {nameof(VeiculoEntity.USUARIO_CODUSER)} apos merge.
+                VehicleEntity vehicleEntity = await con.QueryFirstAsync<VehicleEntity>(sql, new {id});
                 return vehicleEntity;
         
             }
@@ -93,7 +93,7 @@ namespace Locamobi_CRUD_Repositories.Repository
                             CIDADE_CODCID = @Cidade_CodCid,
                               CLASSIFIC = @Classific,
                                 TIPO = @Tipo                     
-                 WHERE CODVEICULO = @CodVeiculo ";//@Usuario_CodUser vai ser inserido após merge.
+                 WHERE CODVEICULO = @Id ";//@Usuario_CodUser vai ser inserido após merge.
 
             await _connection.Execute(sql, vehicleUpdate);
         }

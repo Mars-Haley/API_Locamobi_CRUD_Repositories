@@ -1,5 +1,5 @@
-﻿using Crudzin.Contracts.Repository;
-using Crudzin.DTO_;
+﻿using Locamobi.Contracts.Repository;
+using Locamobi.DTO_;
 using Locamobi.Contracts.Service;
 using Locamobi.Entity;
 using Locamobi.Response;

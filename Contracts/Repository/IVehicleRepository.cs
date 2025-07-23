@@ -1,8 +1,7 @@
-﻿using Locamobi_CRUD_Repositories.DTO;
-using Locamobi_CRUD_Repositories.Entity;
-using Locamobi.Response;
+﻿using Locamobi.DTO;
+using Locamobi.Entity;
 
-namespace Locamobi_CRUD_Repositories.Contracts.Repository
+namespace Locamobi.Contracts.Repository
 {
     public interface IVehicleRepository
     {
@@ -12,8 +11,8 @@ namespace Locamobi_CRUD_Repositories.Contracts.Repository
 
         Task Update(VehicleEntity vehicleUpdate);
 
-        Task<VehicleEntity> GetByCodVeiculo(int codVeiculo);
+        Task<VehicleEntity> GetById(int id);
 
-        Task Delete(int codVeiculo);
+        Task Delete(int id);
     }
 }
