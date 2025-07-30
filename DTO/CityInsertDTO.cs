@@ -8,8 +8,7 @@ namespace Locamobi.DTO_
 {
     public class CityInsertDTO
     {
-        public int CODCID { get; set; }
-        public string NOMECID { get; set; }
+        public string Name { get; set; }
         public string UF { get; set; }
     }
 }

@@ -32,8 +32,6 @@ namespace Locamobi
             builder.Services.AddScoped<IRatingRepository, RatingRepository>();
             builder.Services.AddScoped<IRatingService,  RatingService>();
 
-
-
             //ADIÇÃO DO BEARER NO SWAGGER 
             builder.Services.AddSwaggerGen(c =>
             {
