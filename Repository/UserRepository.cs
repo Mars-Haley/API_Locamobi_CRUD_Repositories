@@ -33,7 +33,7 @@ namespace Locamobi.Repository
                                 NUMERO AS {nameof(UserEntity.PhoneNumber)},
                                 ENDERECO AS {nameof(UserEntity.Address)},
                                 CIDADE_CODCID AS {nameof(UserEntity.CityId)},
-                                GENERO AS  {nameof(UserEntity.GenderText)},
+                                GENERO AS {nameof(UserEntity.GenderText)},
                                 DATA_NASCIMENTO AS {nameof(UserEntity.Birthday)}
                                 FROM USUARIO";
                 IEnumerable<UserEntity> userList = await con.QueryAsync<UserEntity>(sql);
@@ -59,10 +59,8 @@ namespace Locamobi.Repository
                 UserEntity user = await con.QueryFirstAsync<UserEntity>(sql, new { id });
                 return user;
             }
-
         }
 
-       
         public async Task<UserEntity> Login(UserLoginDTO user)
         {
             using (MySqlConnection con = _connection.GetConnection())
@@ -75,7 +73,6 @@ namespace Locamobi.Repository
                 return await con.QueryFirstAsync<UserEntity>(sql, user);
             } 
         }
-        
 
         public async Task<UserEntity> GetByEmail(string email)
         {
@@ -101,10 +98,9 @@ namespace Locamobi.Repository
         public async Task Insert(UserInsertDTO user)
         {
             string sql = $@"INSERT INTO USUARIO (NOME,EMAIL,CPF,SENHA,NUMERO,ENDERECO,CIDADE_CODCID,GENERO,DATA_NASCIMENTO)
-                            VALUES(@Name,@Email,@Cpf,@Password,@PhoneNumber,@Address,@CityId,@Gender,@Birthday)";
+                            VALUES(@Name,@Email,@Cpf,@Password,@PhoneNumber,@Address,@CityId,@GenderText,@Birthday)";
             await _connection.Execute(sql, user);
         }
-
 
         public async Task Update(UserEntity user)
         {
@@ -113,7 +109,7 @@ namespace Locamobi.Repository
                             EMAIL = @Email,
                             ENDERECO = @Address,
                             NUMERO = @PhoneNumber,
-                            GENERO = @Gender
+                            GENERO = @GenderText
                             WHERE CODUSER = @Id";
             await _connection.Execute(sql, user);
         }

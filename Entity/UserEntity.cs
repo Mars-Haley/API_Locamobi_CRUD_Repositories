@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using Locamobi.Enums;
+using Locamobi.Common;
 
 namespace Locamobi.Entity
 {
@@ -16,42 +17,26 @@ namespace Locamobi.Entity
         public int CityId { get; set; }
         public DateTime Birthday { get; set; }
         public Gender Gender { get; set; }
-
+        
         public string Password
         {
             get { return _password; }
             set { _password = value; }
         }
-
+        
         public string GenderText
         {
-            get => Gender.ToString();
-            set => Gender = StringToGender(value);
+            get => GenderConverter.ToPortuguese(Gender);
+            set => Gender = GenderConverter.FromPortuguese(value);
         }
-
-        private static string GenderToString(Gender gender) => gender switch
-        {
-            Gender.Man => "HOMEM",
-            Gender.Woman => "MULHER",
-            Gender.NonBinary => "NB",
-            Gender.NotAssigned => "N/A",
-            _ => throw new ArgumentOutOfRangeException(nameof(gender), gender, null)
-        };
-
-        private static Gender StringToGender(string text) => text switch
-        {
-            "HOMEM" => Gender.Man,
-            "MULHER" => Gender.Woman,
-            "NB" => Gender.NonBinary,
-            "NA" => Gender.NotAssigned,
-            _ => throw new ArgumentOutOfRangeException(nameof(text), text, null)
-        };
-
-
-        public UserEntity(int id, string name, string email, string password, string phoneNumber, string address, int cityId, DateTime birthday, Gender gender)
+        
+        // Construtor completo
+        public UserEntity(int id, string name, string cpf, string email, string password, 
+            string phoneNumber, string address, int cityId, DateTime birthday, Gender gender)
         {
             Id = id;
             Name = name;
+            Cpf = cpf;
             Email = email;
             Password = password;
             PhoneNumber = phoneNumber;
@@ -60,7 +45,7 @@ namespace Locamobi.Entity
             Birthday = birthday;
             Gender = gender;
         }
-
-        public UserEntity(){}
+        
+        public UserEntity() { }
     }
 }
