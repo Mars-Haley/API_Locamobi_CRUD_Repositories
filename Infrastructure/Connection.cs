@@ -6,7 +6,8 @@ namespace Locamobi.Infrastructure
 {
     public class Connection : IConnection
     {
-        protected string connectionString = "Server=localhost;Database=locamobi;User=root;Password=root;";
+        //protected string connectionString = "Server=localhost;Database=locamobi;User=root;Password=root;";
+        protected string connectionString = "Server=3306;Database=locamobi;User=root;Password=root;";
 
         public MySqlConnection GetConnection()
         {
